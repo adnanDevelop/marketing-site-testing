@@ -12,10 +12,10 @@ const TestmonialSection = () => {
     <div className="testmonial_section  padding-inline">
       {/* HEADER SECTION */}
       <div className="testmonial_header flex items-center justify-between ">
-        <h2 className="text-black font-semibold capitalize  xl:text-[50px] sm:text-[30px] text-[25px]  ">
+        <h2 className="text-black font-semibold capitalize  xl:text-[50px] sm:text-[30px] text-[25px]" data-aos='zoom-in-out' data-aos-duration='1500' >
           client testmonials
         </h2>
-        <div className="slider_btn flex items-center gap-2">
+        <div className="slider_btn flex items-center gap-2" data-aos='zoom-out' data-aos-duration='1500' >
           <button className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] ">
             <FaArrowLeft />
           </button>
@@ -42,9 +42,9 @@ const TestmonialSection = () => {
               spaceBetween: 20,
             },
             768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
             1024: {
               slidesPerView: 3,
               spaceBetween: 50,
@@ -59,10 +59,10 @@ const TestmonialSection = () => {
         >
           {testCotent.map((element, index) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <div
                   className="mb-[100px] mt-[40px] basis testmonial_card shadow-lg rounded-xl bg-white  py-[40px] px-[35px]"
-                  key={index}
+                  data-aos='fade-up' data-aos-duration='1500'
                 >
                   <p className="text-justify mb-[20px] text-[20px]">{element.content}</p>
                   <div className="flex items-center gap-4   ">

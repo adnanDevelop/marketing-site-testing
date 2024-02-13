@@ -11,13 +11,14 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState(' ');
   const [scrollAnimation, setScrollAnimation] = useState(false);
 
+
+
   /*
     THIS IS FOR NAVBAR SCROLL ANIMATION
-  */ 
+  */
   window.addEventListener("scroll", () => {
     window.scrollY > 50 ? setScrollAnimation(true) : setScrollAnimation(false);
   });
-
 
   /*
      FOR CLOSING NAVBAR AND ADDING ACTIVE COLOR IN NAV LINK
@@ -30,27 +31,27 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 left-0 z-20 w-full h-auto padding-inline   border-b-[2px] border-b-[#FFFFFF38]  flex items-center justify-between  ${scrollAnimation ? 'nav-scroll shadow ' : ' '}`}
+      className={`navbar fixed top-0 left-0 z-20 w-full h-auto padding-inline border-b-[2px] border-b-[#FFFFFF38]  flex items-center justify-between  ${scrollAnimation ? 'nav-scroll shadow ' : ' '}`}
     >
       <div className="logo py-3">
         <Link to="/">
           <img src="/image/logo.png" alt="" />
         </Link>
       </div>
-
+      {/* LARGE SCREEN NAV-LINKS */}
       <div className="links_section lg:block hidden">
         <ul className="list-none flex items-center gap-6">
-          <li className=" py-3" >
-            <button className="capitalize me-6 font-semibold text-slate-500 transition duration-500 hover:text-sky-500 relative dropdown">
+          <li className="py-3">
+            <button className="capitalize flex group items-center gap-x-1 font-semibold text-slate-500 transition duration-500 hover:text-sky-500 relative dropdown">
               Services{" "}
-              <span className=" ms-1 caret transition duration-500 inline-block ">
+              <span className="caret transition duration-300 inline-block ">
                 <FaCaretDown />
               </span>
               <ul className="list-none dropdown bg-white absolute top-[250%] left-[-10%] w-[230px]  p-4 rounded-md  z-10  border border-soft-white  opacity-0 text-start">
                 <li>
                   <Link
                     to="/servicesolution"
-                    className={`font-lg capitalize font-normal  transition duration-500 hover:text-sky-500 inline-block mb-3 ${activeLink === 'solution' ? 'text-sky-500' : 'text-black'} `}
+                    className={`text-[14px] capitalize font-[500]  transition duration-500 hover:text-sky-500 inline-block mb-2 ${activeLink === 'solution' ? 'text-sky-500' : 'text-black'} `}
                     onClick={() => setActiveLink('solution')}
                   >
                     communication solutions
@@ -59,7 +60,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/servicesoftware"
-                    className={`font-lg capitalize font-normal text-black transition duration-500 hover:text-sky-500 inline-block mb-3 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'} `}
+                    className={`text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block mb-2 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'} `}
                     onClick={() => setActiveLink('development')}
                   >
                     software development
@@ -68,7 +69,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/serviceautomation"
-                    className={`font-lg capitalize font-normal text-black transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
+                    className={`text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
                     onClick={() => setActiveLink('automation')}
                   >
                     process automation
@@ -120,9 +121,9 @@ const Navbar = () => {
         <FaBarsStaggered />
       </button>
 
-      {/* MOBILE MENU */}
+      {/* SMALL SCREEN NAV-LINKS */}
       <div
-        className={`mobile_menu lg:hidden block fixed top-0  bg-white shadow-lg md:w-[35%] sm:w-[60%] w-[70%] h-screen z-50 duration-300 bg-blue-500 px-6 pt-4 ${active ? "left-[0%]" : "left-[-100%]"
+        className={`mobile_menu lg:hidden block fixed top-0  bg-white shadow-lg md:w-[35%] sm:w-[60%] w-[65%] h-screen z-50 duration-300 bg-blue-500 px-4 pt-4 ${active ? "left-[0%]" : "left-[-100%]"
           } `}
       >
         {/* HEADER SECTION */}
@@ -137,7 +138,7 @@ const Navbar = () => {
             </Link>
           </div>
           <button
-            className="close_btn text-[16px] text-black p-2 border-2  border-black rounded-md transition duration-300 hover:border-sky-500 hover:text-sky-500 "
+            className="close_btn text-[16px] text-[#43525B] p-2 border-2  border-[#43525B] rounded-md transition duration-300 hover:border-sky-500 hover:text-sky-500 "
             onClick={() => setActive(false)}
           >
             <GrClose />
@@ -146,17 +147,63 @@ const Navbar = () => {
 
         {/* LNIKS SECTION */}
         <div className="w-full h-[80vh] flex items-start justify-start flex-col pt-[60px] ">
-          <ul className="list-none flex items-start justify-start flex-col gap-6   ">
-            <li>
+          <button
+            className="capitalize mb-5 font-semibold text-start text-slate-500 transition duration-500 hover:text-sky-500 relative mobile_menu "
+            onClick={() => setItemActive(!itemActive)}
+          >
+            Service
+            <span className="caret transition duration-500 inline-block ">
+              <FaCaretDown />
+            </span>
+            <ul
+              className={`list-none dropdown w-full transition duration-300 shadow  ${itemActive
+                ? "max-h-[150px] h-auto mt-2  p-3  opacity-100  "
+                : "max-h-0 mt-0 opacity-0 "
+                }  rounded-md  bg-white  `}
+            >
+              <li>
+                <Link
+                  to="/servicesolution"
+                  className={`text-[14px] capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-2 ${activeLink === 'solution' ? 'text-sky-500' : 'text-slate-500'}`}
+                  onClick={() => closeNavFun('solution')}
+                >
+                  communication solutions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/servicesoftware"
+                  className={`text-[14px]  capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-2 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'}`}
+                  onClick={() => closeNavFun('development')}
+                >
+                  software development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/serviceautomation"
+                  className={`text-[14px]  capitalize font-normal transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
+                  onClick={() => closeNavFun('automation')}
+                >
+                  process automation
+                </Link>
+              </li>
+            </ul>
+          </button>
+          <ul className="list-none flex items-start justify-start flex-col gap-4   ">
+            {/* <li>
               <button
                 className="capitalize font-semibold text-start text-slate-500 transition duration-500 hover:text-sky-500 relative mobile_menu "
                 onClick={() => setItemActive(!itemActive)}
               >
                 Service
+                <span className="caret transition duration-500 inline-block ">
+                  <FaCaretDown />
+                </span>
                 <ul
                   className={`list-none dropdown w-full transition duration-300 shadow  ${itemActive
-                      ? "h-auto mt-4  p-4  opacity-100  "
-                      : "h-0 mt-0 opacity-0 "
+                    ? "h-auto mt-4  p-4  opacity-100  "
+                    : "h-0 mt-0 opacity-0 "
                     }  rounded-md  bg-white  `}
                 >
                   <li>
@@ -188,7 +235,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </button>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/about"

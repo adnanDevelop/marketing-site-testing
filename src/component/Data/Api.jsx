@@ -1,18 +1,18 @@
 export const serviceData = [
   {
-    count: "01",
+    count: "01.",
     title: "Communication Solutions",
     content:
       "Effective & reliable communication is the secret that lies at the heart of every successful business.",
   },
   {
-    count: "02",
+    count: "02.",
     title: "Software Development",
     content:
       "Any business that aims to offer a personalized service needs to cater to its own specific needs first.",
   },
   {
-    count: "03",
+    count: "03.",
     title: "Process Automation",
     content:
       "You need to free your teams from drudgery of routine tasks to enhance customers’ experience.",
@@ -68,22 +68,22 @@ export const testCotent = [
 // ABOUT STORY CONTENT
 export const storyContent = [
   {
-    icon: '/image/about/about-story/img-1.svg',
+    icon: '/image/about/about-story/img-1.png',
     title: 'Innovation',
     content: 'Innovation threads through our DNA, sparking creativity and progress in every venture we undertake.',
   },
   {
-    icon: '/image/about/about-story/img-2.svg',
+    icon: '/image/about/about-story/img-2.png',
     title: 'Team work',
     content: 'Teamwork is our driving force, weaving diverse skills into a tapestry of shared success and collective achievements.',
   },
   {
-    icon: '/image/about/about-story/img-3.svg',
+    icon: '/image/about/about-story/img-3.png',
     title: 'Integrity',
     content: 'In the spirit of true partnership, we want to do right by you and that means we will advise and provide you with the solutions we think are best for you.',
   },
   {
-    icon: '/image/about/about-story/img-4.svg',
+    icon: '/image/about/about-story/img-4.png',
     title: 'Responsibility',
     content: 'For us it is not about a one-time sale, we will be your technology partners and thus our approach to work in action-oriented and result driven.',
   },

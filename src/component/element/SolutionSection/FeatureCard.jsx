@@ -3,11 +3,11 @@ import React from 'react'
 const FeatureCard = () => {
     return (
         <div className='solution_feature_section  padding-inline '>
-            <h3 className='text-black font-extrabold xl:text-[50px] md:text-[40px] text-[30px] sm:mb-[50px] mb-[30px] text-center '>Key Features</h3>
+            <h3 className='text-black font-extrabold xl:text-[50px] md:text-[40px] text-[30px] sm:mb-[50px] mb-[30px] text-center' data-aos='zoom-in' data-aos-duration='1800' >Key Features</h3>
 
             {/* FEATURE CARD ONE */}
             <div className="feature_card_section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-[20px] xl:mx-[100px]  ">
-                <div className={`feature_card  rounded-[20px] pt-[20px] pb-[50px]  transition duraiton-300 bg-white hover:bg-light-white `}>
+                <div className={`feature_card  rounded-[20px] pt-[20px] pb-[50px]  transition duraiton-300 bg-white hover:bg-light-white `} data-aos='zoom-out' data-aos-duration='1800' >
                     <img src='/image/solution/feature/img-1.png' className='mx-auto' alt="" />
                     <div className="feature_card_body text-center md:px-[20px] px-[15px] ">
                         <h4 className='my-3 xl:text-[30px] text-[22px]  text-black font-bold leading-none '>Secured Platform</h4>
@@ -18,7 +18,7 @@ const FeatureCard = () => {
                 </div>
 
                 {/* FEATURE CARD ONE */}
-                <div className={`feature_card bg-light-white rounded-[20px] pt-[20px] pb-[50px]  transition duraiton-300`}>
+                <div className={`feature_card bg-light-white rounded-[20px] pt-[20px] pb-[50px]  transition duraiton-300`}  data-aos='zoom-out' data-aos-duration='1800'>
                     <img src='/image/solution/feature/img-1.png' className='mx-auto' alt="" />
                     <div className="feature_card_body text-center md:px-[20px] px-[15px] ">
                         <h4 className='my-3 xl:text-[30px] text-[22px]  text-black font-bold leading-none '>Unlimited Scalability</h4>
@@ -29,7 +29,7 @@ const FeatureCard = () => {
                 </div>
 
                 {/* FEATURE CARD ONE */}
-                <div className={`feature_card  rounded-[20px] pt-[20px] pb-[50px]  transition duraiton-300 bg-white hover:bg-light-white `}>
+                <div className={`feature_card  rounded-[20px] pt-[20px] pb-[50px]  transition duraiton-300 bg-white hover:bg-light-white `}  data-aos='zoom-out' data-aos-duration='1800'>
                     <img src='/image/solution/feature/img-1.png' className='mx-auto' alt="" />
                     <div className="feature_card_body text-center md:px-[20px] px-[15px] ">
                         <h4 className='my-3 xl:text-[30px] text-[22px]  text-black font-bold leading-none '>Automated calls</h4>

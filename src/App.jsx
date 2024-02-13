@@ -1,3 +1,6 @@
+import React , {useEffect} from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./component/navFooter/Navbar";
 import Footer from './component/navFooter/Footer';
@@ -15,7 +18,16 @@ import WorkTogether from "./component/Page/WorkTogether";
 import TopBtn from "./component/utils/TopBtn";
 
 
+
 function App() {
+  useEffect(() => {       // SCROLL ANIMATION
+    Aos.init({
+      duration: 1000, 
+    });
+  }, []);
+
+
+
   return (
     <>
       <BrowserRouter>

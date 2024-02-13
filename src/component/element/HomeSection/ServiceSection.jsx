@@ -8,7 +8,7 @@ const ServiceSection = () => {
     <div className="service_section padding-inline flex padding-block ">
       <div className="service_heading_section flex lg:items-center justify-between lg:flex-row flex-col ">
         <div className=" basis-full xl:basis-1/2 ">
-          <p className="mb-2 text-sky-500 font-medium sm:text-[20px] text-[18px] capitalize">
+          <p className="mb-2 text-sky-500 font-medium sm:text-[20px] text-[18px] capitalize" data-aos='zoom-in-out' data-aos-duration='1500'>
             services
           </p>
           <div className="relative z-10">
@@ -23,9 +23,9 @@ const ServiceSection = () => {
         <div className="basis-full xl:basis-2/5  lg:mt-0 mt-[30px]">
           {serviceData.map((element, index) => {
             return (
-              <div key={index} className="service_question pb-3 border-b-[1px] border-b-soft-white">
-                <p className="2xl:text-[60px] sm:text-[40px] text-[30px] text-outline ">{element.count}</p>
-                <h3 className=" sm:ps-[50px] ps-[30px] font-normal font-secondary 2xl:text-[30px] text-[20px] text-black  ">
+              <div key={index} className="service_question pb-3 border-b-[1px] border-b-soft-white" data-aos='fade-up' data-aos-duration='1500' >
+                <p className="2xl:text-[60px] sm:text-[40px] text-[40px] text-outline ">{element.count}</p>
+                <h3 className=" sm:ps-[50px] ps-[30px] font-medium font-secondary 2xl:text-[30px] text-[20px] text-black  ">
                   {element.title}
                 </h3>
                 <p className="sm:ps-[50px] ps-[30px] font-light text-black md:text-[18px] text-[16px] font-secondary ">

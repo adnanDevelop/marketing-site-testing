@@ -24,7 +24,8 @@ module.exports = {
 
     fontFamily: {
       'primary': ['Plus Jakarta Sans', "sans-serif"],
-      'secondary': ['Roboto', 'sans-serif'],
+      'secondary': ['Poppins', 'sans-serif'],
+      'heading': ['Montserrat', 'sans-serif'],
       'blog' : ['Nunito Sans', 'sans-serif']
     },
   },

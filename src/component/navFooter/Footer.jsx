@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="footer_section  pt-[60px] pb-[20px] grid grid-cols-12 relative ">
 
           {/* FOOTER DETAIL AND LINKS SECTION */}
-          <div className="flex lg:justify-between flex-wrap xl:col-span-8 ">
+          <div className="flex justify-between flex-wrap xl:col-span-9 md:col-span-8 col-span-12 ">
             {/*LINK SECTION */}
-            <div className="footer_link">
+            <div className="footer_link xl:basis-2/12 sm:basis-2/4 basis-full ">
               <Link
                 to="/"
                 className=" inline-block text-white font-semibold text-[20px] mb-[16px] "
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
 
             {/* DETAIL SECTION */}
-            <div className="footer-detail_section lg:ps-0 sm:ps-[100px] ">
+            <div className="footer-detail_section  xl:basis-1/4 sm:basis-2/4 basis-full sm:mt-0 mt-[40px]  ">
               <p className=" inline-block text-white font-semibold text-[20px] mb-[16px]">
                 Get in touch
               </p>
@@ -78,7 +78,7 @@ const Footer = () => {
             </div>
 
             {/* FOOTER ADDRESS SECTION */}
-            <div className="lg: flex lg:items-center " >
+            <div className="lg:flex lg:items-center mt-[20px] xl:mt-0 xl:basis-2/4 basis-full " >
               <div className="address_section  ">
                 <p className="text-sky-900 text-[15px] font-semibold ">Address: </p>
                 <p className="text-white text-[15px] font-normal">
@@ -100,7 +100,7 @@ const Footer = () => {
           
           
           {/* FOOTER QUESTION SECTION */}
-          <div className="question_section col-span-4 flex items-center justify-center "> 
+          <div className="question_section flex xl:items-center md:justify-center xl:col-span-3 md:col-span-4 col-span-12 md:mt-0 mt-[40px] md:mb-0 mb-4 "> 
             <div className="content_section">
               <h3 className="lg:text-[25px] text-[20px] text-white font-semibold mb-4">Have any Questions</h3>
               <Link to='/' className="btn-primary-outline" >Get in touch</Link>

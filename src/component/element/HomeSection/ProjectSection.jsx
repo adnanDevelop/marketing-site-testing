@@ -1,43 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
-
+import CountUp from 'react-countup'
+import ScrollTrigger from "react-scroll-trigger";
 
 const ProjectSection = () => {
+  const [counterOn , setCounterOn] = useState(false);
+
   return (
-    <div className="project_section relative xl:py-[40px] lg:py-[30px] pb-[40px] " >
-        
-      <div className="flex  lg:items-center lg:flex-row flex-col  padding-inline ">
-        <div className="project_img_section  lg:basis-1/3 md:basis-2/4 basis-full   ">
+    <div className="project_section xl:before:h-[95%] lg:before:h-[85%] before:right-0  relative " >
+      <div className="flex  items-center justify-center lg:flex-row flex-col  padding-inline">
+        <div className="project_img_section lg:basis-1/3 md:basis-2/4 basis-full" data-aos='zoom-in-out' data-aos-duration='1500' >
           <img
             src="/image/about-img.png"
-            className=" xl:w-[450px] lg:w-[350px] sm:w-[400px] w-full xl:h-[600px] sm:h-[400px] h-[350px] "
+            className=" xl:w-[400px] lg:w-[350px] md:w-[400px] w-full xl:h-[480px] sm:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
           />
         </div>
-        <div className="project_content  lg:basis-2/3 md:basis-2/4 basis-full  lg:py-[100px] lg:mt-0 mt-[50px]">
-          <p className="text-white xl:text-[30px] lg:text-[25px]  text-[20px] text-justify xl:ps-[100px] lg:ps-[50px]">
+        <div className="project_content w-full h-[90vh] flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full  xl:pt-[120px]  lg:pb-[100px] lg:mt-0 mt-[50px]">
+          <p className="text-white font-[300] font-heading xl:text-[25px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px]" data-aos='fade-up' data-aos-duration='1500' >
             Specializing in VoIP, software development, and intelligent
             automation, we offer tailored solutions that resonate with your
             unique needs. Elevate your communication experience with us – your
             trusted one-stop provider for all your business needs.
           </p>
-          <div className="flex items-center lg:justify-end justify-start lg:gap-[70px] sm:gap-[40px] gap-[20px] md:mt-6 mt-4">
-              <div className="text-center project_counter">
-                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-semibold">150+</p>
+          <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
+            <div className="flex items-center lg:justify-end justify-start lg:gap-[70px] sm:gap-[40px] gap-[20px] md:mt-6 mt-8">
+              <div className="text-center project_counter" data-aos='fade-up' data-aos-duration='1500' >
+                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold"> {counterOn && <CountUp start={0} end={150} duration={3} delay={0} />}+</p>
                 <p className="text-[12px] text-white font-light capitalize ">project completed</p>
               </div>
-              <div className="text-center project_counter">
-                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-semibold">200+</p>
+              <div className="text-center project_counter" data-aos='fade-up' data-aos-duration='1500' >
+                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold"> {counterOn && <CountUp start={0} end={200} duration={3} delay={0} />}+</p>
                 <p className="text-[12px] text-white font-light capitalize ">client satisfied</p>
               </div>
-              <div className="text-center project_counter">
-                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-semibold">10+</p>
+              <div className="text-center project_counter" data-aos='fade-up' data-aos-duration='1500' >
+                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold"> {counterOn && <CountUp start={0} end={10} duration={3} delay={0} />}+</p>
                 <p className="text-[12px] text-white font-light capitalize ">years of experience</p>
               </div>
-          </div>
-          <div className="flex justify-end  lg:mt-[50px] mt-[30px]">
-            <Link to='/about' className="flex items-center capitalize font-bold text-white bg-sky-500 rounded-full px-[30px] py-[15px] transition duration-300  hover:text-white focus:text-white hover:scale-105 " >About Us <span className="ps-3"> <FaArrowRight /> </span> </Link>
+            </div>
+          </ScrollTrigger>
+          <div className="flex justify-end  lg:mt-[50px] mt-[30px]" data-aos='fade-up' data-aos-duration='1500' >
+            <Link to='/about' className="flex items-center capitalize font-bold text-white bg-sky-500 rounded-full md:px-[30px] px-[25px] font-heading md:py-[15px] py-[12px] md:text-[15px] text-[14px] transition duration-300  hover:text-white focus:text-white hover:scale-105 " >About Us <span className="ps-3"> <FaArrowRight /> </span> </Link>
           </div>
         </div>
       </div>
