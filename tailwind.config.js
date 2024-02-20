@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      dropShadow : {
-        '1xl' : '0px 17px 44px rgba(179, 179, 179, 0.25)',
+      dropShadow: {
+        '1xl': '0px 17px 44px rgba(179, 179, 179, 0.25)',
       }
     },
     colors: {
@@ -26,7 +26,7 @@ module.exports = {
       'primary': ['Plus Jakarta Sans', "sans-serif"],
       'secondary': ['Poppins', 'sans-serif'],
       'heading': ['Montserrat', 'sans-serif'],
-      'blog' : ['Nunito Sans', 'sans-serif']
+      'blog': ['Nunito Sans', 'sans-serif']
     },
   },
   plugins: [],

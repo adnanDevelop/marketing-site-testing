@@ -20,7 +20,7 @@ export const serviceData = [
 ];
 
 // TESTMONIAL CONTENT SECTION
-export const testCotent = [
+export const testContent = [
   {
     title: "Brian Colombiana",
     subtitle: "Smart Automation Systems",
@@ -68,22 +68,22 @@ export const testCotent = [
 // ABOUT STORY CONTENT
 export const storyContent = [
   {
-    icon: '/image/about/about-story/img-1.png',
+    icon: '/image/about/about-story/icon-1.png',
     title: 'Innovation',
     content: 'Innovation threads through our DNA, sparking creativity and progress in every venture we undertake.',
   },
   {
-    icon: '/image/about/about-story/img-2.png',
+    icon: '/image/about/about-story/icon-2.png',
     title: 'Team work',
     content: 'Teamwork is our driving force, weaving diverse skills into a tapestry of shared success and collective achievements.',
   },
   {
-    icon: '/image/about/about-story/img-3.png',
+    icon: '/image/about/about-story/icon-3.png',
     title: 'Integrity',
     content: 'In the spirit of true partnership, we want to do right by you and that means we will advise and provide you with the solutions we think are best for you.',
   },
   {
-    icon: '/image/about/about-story/img-4.png',
+    icon: '/image/about/about-story/icon-4.png',
     title: 'Responsibility',
     content: 'For us it is not about a one-time sale, we will be your technology partners and thus our approach to work in action-oriented and result driven.',
   },

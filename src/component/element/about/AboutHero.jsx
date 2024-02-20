@@ -10,8 +10,8 @@ const AboutHero = () => {
 
         <div className="padding-block padding-inline md:mt-0">
           <div className="header_section text-center sm:mb-[50px] mb-[30px] " data-aos='zoom-in' data-aos-duration='1800'>
-            <h2 className="text-black font-extrabold lg:text-[50px] sm:text-[40px] text-[30px]">About our company</h2>
-            <p className="text-[20px] text-secondary font-normal text-[#797979] ">
+            <h2 className="text-black font-extrabold lg:text-[45px] md:text-[40px] sm:text-[30px] text-[28px] capitalize">About our company</h2>
+            <p className="sm:text-[20px] text-[16px] text-secondary font-normal text-[#797979] ">
               Enabling a digital tomorrow
             </p>
           </div>
@@ -30,7 +30,7 @@ const AboutHero = () => {
         {/* CONTENT SECTION */}
         <div className="flex md:flex-row flex-col items-start padding-inline" data-aos='zoom-in-out' data-aos-duration='1800' data-aos-anchor-placement="center-bottom">
           <div className="md:ps-[50px] lg:basis-1/3 md:basis-2/5">
-            <h2 className="text-black font-primary font-bold lg:text-[40px] sm:text-[30px] text-[25px] md:mb-0 mb-2">What we do</h2>
+            <h2 className="text-black font-primary font-extrabold lg:text-[40px] sm:text-[30px] text-[25px] md:mb-0 mb-2 capitalize">What we do</h2>
           </div>
           <div className="md:pe-[50px] lg:basis-2/3  md:basis-3/5" data-aos='zoom-in-out' data-aos-duration='1800' data-aos-anchor-placement="center-bottom">
             <p className="font-normal text-gray text-justify md:text-[18px] text-[15px] " >
