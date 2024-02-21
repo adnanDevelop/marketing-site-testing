@@ -67,12 +67,12 @@
 
 
 /* TOP BTN  */
-.top-icon {
+.top-btn {
   width: 3rem;
   height: 3rem;
   position: fixed;
-  right: 2.5rem;
-  bottom: 2.5rem;
+  right: 2rem;
+  bottom: 2rem;
   z-index: 100;
   cursor: pointer;
   display: grid;
@@ -80,25 +80,20 @@
   visibility: hidden;
   opacity: 0.8;
   font-size: 1.4rem;
-  border-radius: 0.4rem;
+  border-radius: 50%;
   color: white;
   background-color: #2AABE1;
-  border: 0.1rem solid transparent;
   box-shadow: 0 0.8rem 1.5rem #2aaae156;
   transition: all 0.4s linear;
 }
 
-.top-icon:hover,
-.top-icon:focus {
-  opacity: 1;
-  color: #2AABE1;
-  border-color: #2AABE1;
-  background-color: transparent;
+.show-btn {
+  visibility: visible !important;
 }
 
 .animateIcon {
   visibility: visible;
-  animation: iconAnimation 0.5s linear;
+  animation: iconAnimation 1s linear;
 }
 
 @keyframes iconAnimation {
@@ -112,8 +107,32 @@
   }
 }
 
+.top-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  color: #2AABE1;
+  font-size: 1.2rem;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.top-icon:hover {
+  color: white;
+  background-color: #2AABE1;
+}
+
 .icon-animation {
-  animation: icon 1s linear infinite alternate-reverse;
+  display: inline-block;
+  visibility: hidden;
+  animation: icon 1.5s linear infinite alternate-reverse;
+}
+
+.show-icon {
+  visibility: visible !important;
 }
 
 @keyframes icon {
@@ -133,7 +152,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  animation: scroll 0.5s ease-in;
+  animation: scroll 1s ease-in;
   transition: all 0.5s linear;
   background-color: #fff;
 }

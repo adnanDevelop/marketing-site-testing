@@ -1,32 +1,29 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./component/navFooter/Navbar";
-import Footer from './component/navFooter/Footer';
-import Home from './component/Page/Home';
-import ServiceSolution from './component/Page/ServiceSolution';
-import ServiceSoftware from './component/Page/ServiceSoftware';
-import ServiceAutomation from './component/Page/ServiceAutomation';
-import About from './component/Page/About';
-import Career from './component/Page/Career';
-import Blog from './component/Page/Blog';
-import Contact from './component/Page/Contact';
-import NotFound from './component/Page/NotFound';
-import CareerSingle from "./component/Page/CareerSingle";
-import WorkTogether from "./component/Page/WorkTogether";
-import TopBtn from "./component/utils/TopBtn";
-
+import Navbar from "./component/global/Navbar";
+import Footer from "./component/global/Footer";
+import Home from './pages/Home';
+import ServiceSolution from './pages/ServiceSolution';
+import ServiceSoftware from './pages/ServiceSoftware';
+import ServiceAutomation from './pages/ServiceAutomation';
+import About from './pages/About';
+import Career from './pages/Career';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
+import CareerSingle from "./pages/CareerSingle";
+import WorkTogether from "./pages/WorkTogether";
+import TopBtn from "./component/global/TopBtn";
 
 
 function App() {
-  useEffect(() => {       // SCROLL ANIMATION
+  useEffect(() => { // SCROLL ANIMATION
     Aos.init({
-      duration: 1000, 
+      duration: 1000,
     });
   }, []);
-
-
 
   return (
     <>
