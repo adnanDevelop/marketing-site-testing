@@ -1,14 +1,13 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { testContent } from "../../service/Api";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 
 const TestmonialSection = () => {
-  const swiper = useSwiper()
 
   return (
     <div className="testmonial_section padding-inline">
@@ -31,7 +30,7 @@ const TestmonialSection = () => {
         <div className="quote_icon_one absolute z-[10] sm:top-[15px] top-[20px] sm:block hidden ">
           <img src="/image/testmonial/quote-1.png" className="sm:w-[45px] w-[35px]" alt="" />
         </div>
-        <div className="quote_icon_two absolute z-[10] right-0 sm:bottom-[15%] lg:bottom-[18%] md:bottom-[18%] bottom-[13%] rotate-[180deg] sm:block hidden">
+        <div className="quote_icon_two absolute z-[10] right-0 sm:bottom-[15%] lg:bottom-[24%] md:bottom-[18%] bottom-[13%] rotate-[180deg] sm:block hidden">
           <img src="/image/testmonial/quote-1.png" className="sm:w-[45px] w-[35px]" alt="" />
         </div>
 
@@ -63,14 +62,7 @@ const TestmonialSection = () => {
           modules={[Navigation, Autoplay]}
           className="mySwiper"
         >
-           {/* <div className="slider_btn flex items-center gap-2" data-aos='zoom-out' data-aos-duration='1500' >
-          <button onClick={() => swiper.slidePrev()} className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] ">
-            <FaArrowLeft />
-          </button>
-          <button onClick={() => swiper.slideNext()} className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] ">
-            <FaArrowRight />
-          </button>
-        </div> */}
+          <SwiperBtn />
           {testContent.map((element, index) => {
             return (
               <SwiperSlide className="lg:px-[10px] px-[5px]" key={index}>
@@ -104,4 +96,20 @@ const TestmonialSection = () => {
   );
 };
 
+const SwiperBtn = () => {
+  const swiper = useSwiper();
+
+  return (
+    <div className="slider_btn flex items-center gap-2" data-aos='zoom-out' data-aos-duration='1500' >
+      <button onClick={() => swiper.slidePrev()} className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] ">
+        <FaArrowLeft />
+      </button>
+      <button onClick={() => swiper.slideNext()} className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] ">
+        <FaArrowRight />
+      </button>
+    </div>
+  )
+}
+
 export default TestmonialSection;
+

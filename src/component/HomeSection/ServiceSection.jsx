@@ -44,7 +44,7 @@ const ServiceSection = () => {
               connectivity, deliver personalized solutions, and streamline
               operations.
             </p>
-            <img src="/image/service-img.png" className="absolute top-[50%] left-[20%] translate-x-[-20%] translate-y-[-50%] z-[-1] lg:w-[40%] w-[200px] service-img" alt="" ref={imgRef} />
+            <img src="/image/service-img.png" className="absolute top-[50%] left-[0%] translate-y-[-50%] z-[-1] lg:w-[40%] w-[200px] service-img" alt="" ref={imgRef} />
           </div>
         </div>
         <div className="basis-full xl:basis-2/5  lg:mt-0 mt-[30px]">

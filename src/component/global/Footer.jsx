@@ -87,7 +87,7 @@ const Footer = () => {
             {/* FOOTER ADDRESS SECTION */}      
             <div className="lg:flex lg:items-center lg:justify-center xl:basis-2/4 md:basis-2/4 basis-full xl:pe-[100px] relative z-10">
               <div className="footer_img absolute right-[-10%] top-0 z-[-1] xl:block hidden">
-                <img src="/image/footer-img.png" className="w-full max-w-[15rem]" alt="" />
+                <img src="/image/footer-img.png" className="w-full max-w-[15rem] h-auto object-cover" alt="" />
               </div>
               <div className="address_section  ">
                 <p className="text-sky-900 text-[15px] font-semibold ">Address: </p>
@@ -96,10 +96,10 @@ const Footer = () => {
                   <br /> Islamabad, 44000, Pakistan.
                 </p>
                 <div className="footer_icon flex gap-2 mt-5 ">
-                  <a href="https://www.linkedin.com/company/gomarkho/" target="_blank" className="flex items-center justify-center text-base w-[40px] h-[40px] border border-sky-900 text-sky-900 rounded-full">
+                  <a href="https://www.linkedin.com/company/gomarkho/" without rel="noreferrer" target="_blank" className="flex items-center justify-center text-base w-[40px] h-[40px] border border-sky-900 text-sky-900 rounded-full">
                     <i className="fa fa-linkedin "></i>
                   </a>
-                  <a href="mailto:hr@gomarkho.com" target="_blank" className="flex items-center justify-center text-base w-[40px] h-[40px] border border-sky-900 text-sky-900 rounded-full">
+                  <a href="mailto:hr@gomarkho.com" target="_blank" without rel="noreferrer" className="flex items-center justify-center text-base w-[40px] h-[40px] border border-sky-900 text-sky-900 rounded-full">
                     <i className="fa fa-envelope "></i>
                   </a>
                 </div>

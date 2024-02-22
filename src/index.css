@@ -171,15 +171,9 @@
   transition: all 0.3s linear;
 }
 
-.dropdown:focus ul,
-.dropdown:hover ul {
-  opacity: 1 !important;
-  top: 110%;
-}
-
 .dropdown:focus .caret,
 .dropdown:hover .caret {
-  transform: rotate(-180deg);
+  transform: rotate(-180deg) !important;
 }
 
 .gradient_color {
@@ -248,13 +242,15 @@
 
 @keyframes moveLeftToDefault {
   from {
+    left: 0%;
     transform: translate(-100%, -50%);
     opacity: 0;
   }
 
   to {
-    transform: translate(0, -50%);
     opacity: 1;
+    left: 20%;
+    transform: translate(-20% , -50%);
   }
 }
 

@@ -242,7 +242,6 @@ export const blogContent = [
 ]
 
 
-
 // SOLUTION CARD CONTENT
 export const solutionCardContent = [
   {
@@ -348,8 +347,6 @@ export const developmentCard = [
     content: "Using a software that is designed to cater to your needs will enable your team to perform tasks faster and more efficiently.",
   },
 ]
-
-
 
 // DEVELOPMENT  TAB CONTENT
 export const developmentTabContent = [

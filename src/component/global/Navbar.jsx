@@ -10,6 +10,7 @@ const Navbar = () => {
   const [itemActive, setItemActive] = useState(false);
   const [activeLink, setActiveLink] = useState(' ');
   const [scrollAnimation, setScrollAnimation] = useState(false);
+  const [isDropdown, setDropdown] = useState(false)
 
 
 
@@ -48,12 +49,13 @@ const Navbar = () => {
       <div className="links_section lg:block hidden">
         <ul className="list-none flex items-center gap-6">
           <li className="py-3">
-            <button className="capitalize flex group items-center gap-x-1 font-semibold text-slate-500 transition duration-500 hover:text-sky-500 relative dropdown">
+            <button className="capitalize flex group items-center gap-x-1 font-semibold text-slate-500 transition duration-500 ease-in-out hover:text-sky-500 relative dropdown" onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)}>
               Services{" "}
-              <span className="caret transition duration-300 inline-block ">
+              <span className="caret transition duration-300 inline-block">
                 <FaCaretDown />
               </span>
-              <ul className="list-none dropdown bg-white absolute top-[250%] left-[-10%] w-[230px]  p-4 rounded-md  z-10  border border-soft-white  opacity-0 text-start">
+
+              <ul className={`list-none dropdown bg-white absolute top-[120%] left-[-10%] w-[230px] p-4 rounded-md z-10 border border-soft-white transition duration-500 ease-in-out text-start  ${isDropdown ? "opacity-100 max-h-[20rem]" : "opacity-0 max-h-0 h-0"}`}>
                 <li>
                   <Link
                     to="/servicesolution"
@@ -154,16 +156,16 @@ const Navbar = () => {
         {/* LNIKS SECTION */}
         <div className="w-full h-[80vh] flex items-start justify-start flex-col pt-[60px] ">
           <button
-            className="capitalize mb-5 font-semibold text-start text-slate-500 transition duration-500 hover:text-sky-500 relative mobile_menu "
+            className=" gap-x-1 capitalize mb-3 font-semibold text-start text-slate-500 transition duration-500 hover:text-sky-500 relative mobile_menu "
             onClick={() => setItemActive(!itemActive)}
           >
             Service
-            <span className="caret transition duration-500 inline-block ">
+            <span className="ms-1 align-middle caret transition duration-500 inline-block ">
               <FaCaretDown />
             </span>
             <ul
               className={`list-none dropdown w-full transition duration-300 shadow  ${itemActive
-                ? "max-h-[150px] h-auto mt-2  p-3  opacity-100  "
+                ? "max-h-[150px] h-auto opacity-100 mt-2 p-3"
                 : "max-h-0 mt-0 opacity-0 "
                 }  rounded-md  bg-white  `}
             >
