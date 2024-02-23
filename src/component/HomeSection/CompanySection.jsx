@@ -2,8 +2,8 @@ import React from 'react'
 
 const CompanySection = () => {
   return (
-    <div className='discover_secion padding-block padding-inline sm:my-[0px] my-[20px] relative overflow-hidden '>
-      <p className='text-center lg:text-[25px] text-[20px] text-black font-normal mb-[50px] capitalize' data-aos='zoom-out' data-aos-duration='1500' data-aos-anchor-placement="bottom-bottom" >
+    <section className='discover_secion padding-block padding-inline sm:my-[0px] my-[20px] relative overflow-hidden '>
+      <p className='text-center lg:text-[25px] text-[20px] text-black font-normal mb-[50px] capitalize font-primary' data-aos='zoom-out' data-aos-duration='1500' data-aos-anchor-placement="bottom-bottom" >
         Discover the difference as you join a community of businesses that have experienced the transformative power of our services.
       </p>
       <div className='shape_img absolute top-[50%] translate-y-[-50%] lg:left-[-15%] md:left-[-22%] sm:left-[-30%] left-[-32%] z-[-1] rotate-[-15deg]'>
@@ -23,7 +23,7 @@ const CompanySection = () => {
         <img src="/image/company/img-8.png" className='w-[130px] h-auto object-cover' alt="company logo" data-aos='zoom-out' data-aos-duration='1500'  />
       </div>
 
-    </div>
+    </section>
   )
 }
 

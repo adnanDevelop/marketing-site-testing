@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply font-secondary selection:bg-sky-500 selection:text-white overflow-x-hidden;
+    @apply font-secondary selection:bg-sky-500 selection:text-white overflow-x-hidden select-none;
   }
 
   h1,
@@ -25,11 +25,11 @@
   }
 
   .btn-primary-outline {
-    @apply w-[170px] h-[45px] border border-sky-500 rounded-full text-sky-500 font-bold flex items-center justify-center transition duration-300 hover:scale-105;
+    @apply sm:w-[170px] w-[130px] h-[45px] sm:text-[15px] text-[14px] border border-sky-500 rounded-full text-sky-500 font-bold flex items-center justify-center transition duration-300 hover:scale-105;
   }
 
   .btn-primary-md {
-    @apply px-[25px] h-[50px] text-[14px] bg-sky-500 rounded-[5px] transition duration-300 hover:scale-105 text-white font-bold flex items-center justify-center;
+    @apply px-[25px] h-[50px] text-[14px] bg-sky-500 rounded-[5px] transition duration-300 hover:scale-105 text-white font-semibold tracking-[1.5px] flex items-center justify-center;
   }
 
 
@@ -45,7 +45,7 @@
   }
 
   .padding-inline {
-    @apply 2xl:px-[100px] sm:px-[70px] px-[30px];
+    @apply 2xl:px-[100px] sm:px-[70px] px-[20px];
   }
 
   .margin-inline {
@@ -63,6 +63,26 @@
   h1 {
     @apply text-[50px] font-extrabold capitalize text-white;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+  border-radius: 50%;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  background: #2AABE1;
+  transition: all 0.4s linear;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #3fab7a;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -250,7 +270,7 @@
   to {
     opacity: 1;
     left: 20%;
-    transform: translate(-20% , -50%);
+    transform: translate(-20%, -50%);
   }
 }
 
@@ -269,7 +289,7 @@
 .project_section::before {
   content: '';
   position: absolute;
-  width: 75%;
+  /* width: 75%; */
   background-color: #020332;
   z-index: -1;
 }
@@ -320,9 +340,10 @@
 
   .project_section::before {
     width: 100%;
-    height: 70%;
-    bottom: 0;
+    height: 80%;
+    bottom: -50px;
     top: auto;
+    background-color: #020332;
   }
 
   .about_mission_section::before {

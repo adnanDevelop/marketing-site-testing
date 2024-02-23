@@ -7,7 +7,7 @@ const AboutCounter = () => {
 
   return (
     <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
-      <div className="about_counter_section relative margin-inline sm:py-[50px] py-[30px]   margin-block  rounded-[30px] bg-light-white  flex sm:flex-row flex-col flex-wrap items-center  ">
+      <section className="about_counter_section relative margin-inline sm:py-[50px] py-[30px]   margin-block  rounded-[30px] bg-light-white  flex sm:flex-row flex-col flex-wrap items-center  ">
         <div className="w-[350px] h-auto absolute  lg:bottom-[75%] bottom-[65%] xl:left-[-18%] lg:left-[-28%]  left-[-25%] rotate-[-20deg] z-[-1] lg:block hidden">
           <img src="/image/shape.png" alt="" />
         </div>
@@ -47,7 +47,7 @@ const AboutCounter = () => {
             client worldwide
           </p>
         </div>
-      </div>
+      </section>
     </ScrollTrigger>
   );
 };

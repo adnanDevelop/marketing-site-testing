@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
     return (
-        <div className='career_form_section md:py-[60px] py-[40px] xl:px-[50px] px-[25px]  rounded-[30px] bg-white drop-shadow-1xl lg:mx-[150px] md:mx-[100px] mx-[30px] mb-[100px]  '>
+        <section className='career_form_section md:py-[60px] py-[40px] xl:px-[50px] px-[25px]  rounded-[30px] bg-white drop-shadow-1xl lg:mx-[150px] md:mx-[100px] mx-[30px] mb-[100px]  '>
             <div className="grid md:grid-cols-2 grid-cols-1  lg:gap-[25px] gap-[20px]  ">
                 {/* NAME FIELD */}
                 <div className='field_one mb-3'>
@@ -37,7 +37,7 @@ const ContactForm = () => {
             </div>
 
 
-        </div>
+        </section>
     )
 }
 

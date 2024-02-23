@@ -24,7 +24,7 @@ const WorkForm = () => {
     };
 
     return (
-        <div className='career_form_section md:py-[60px] py-[40px] xl:px-[50px] px-[25px] rounded-[30px] bg-white drop-shadow-1xl  lg:mx-[150px] md:mx-[100px] mx-[30px] mb-[100px]  '>
+        <section className='career_form_section md:py-[60px] py-[40px] xl:px-[50px] px-[25px] rounded-[30px] bg-white drop-shadow-1xl  lg:mx-[150px] md:mx-[100px] mx-[30px] mb-[100px]  '>
             <div className="grid md:grid-cols-2 grid-cols-1  lg:gap-[25px] gap-[20px]  ">
 
                 {/* NAME FIELD */}
@@ -75,7 +75,7 @@ const WorkForm = () => {
                 <button type='submit' className=' inline-block capitalize font-bold text-white bg-sky-500 rounded-full md:px-[40px] px-[30px]  py-[15px] transition duration-300 group-hover:bg-white  group-hover:text-black group-focus:text-black ' onClick={handleSubmit} >Submit</button>
             </div>
 
-        </div>
+        </section>
     )
 }
 

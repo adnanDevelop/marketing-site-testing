@@ -2,14 +2,14 @@ import React from 'react'
 
 const CareerHero = () => {
     return (
-        <div className='career_hero_section pb-[80px] padding-inline relative overflow-x-hidden'>
+        <section className='career_hero_section pb-[80px] padding-inline relative overflow-x-hidden'>
             <div className="shape_img w-[400px] h-auto absolute top-[100px] md:right-[-220px] right-[-250px] md:rotate-[-155deg] rotate-[-155deg] z-[-1] md:block hidden">
                 <img src="/image/shape.png" alt="" />
             </div>
-            <div className='text-center about_work_section  md:pt-[120px] pt-[100px] pb-[80px] flex items-center justify-center flex-col ' data-aos='zoom-in-out' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
-                <h2 className='text-black font-bold text-primary xl:text-[50px] md:text-[40px] text-[30px]  leading-none' >Career</h2>
+            <div className='text-center about_work_section md:pt-[120px] pt-[100px] pb-[80px] flex items-center justify-center flex-col ' data-aos='zoom-in-out' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
+                <h2 className='text-black xl:text-[50px] md:text-[40px] text-[30px]  leading-none font-primary font-bold' >Career</h2>
                 <p className='text-gray font-normal text-secondary xl:text-[20px] md:text-[18px] text-[16px]  my-4 '>Take your career to the next level</p>
-                <a href='#job' className='btn-primary-md capitalize' >Browse Open positions</a>
+                <a href='#job' className='btn-primary-md capitalize'>Browse Open positions</a>
             </div>
 
             {/* CAREER GALLERY SECTION */}
@@ -22,7 +22,7 @@ const CareerHero = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }
 

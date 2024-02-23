@@ -1,3 +1,8 @@
+import { FaRegLightbulb } from "react-icons/fa";
+import { FaUserFriends } from "react-icons/fa";
+import { FaAward } from "react-icons/fa6";
+import { GrCopy } from "react-icons/gr";
+
 export const serviceData = [
   {
     count: "01.",
@@ -68,22 +73,22 @@ export const testContent = [
 // ABOUT STORY CONTENT
 export const storyContent = [
   {
-    icon: '/image/about/about-story/icon-1.png',
+    icon: <FaRegLightbulb />,
     title: 'Innovation',
     content: 'Innovation threads through our DNA, sparking creativity and progress in every venture we undertake.',
   },
   {
-    icon: '/image/about/about-story/icon-2.png',
+    icon: <FaUserFriends />,
     title: 'Team work',
     content: 'Teamwork is our driving force, weaving diverse skills into a tapestry of shared success and collective achievements.',
   },
   {
-    icon: '/image/about/about-story/icon-3.png',
+    icon: <FaAward />,
     title: 'Integrity',
     content: 'In the spirit of true partnership, we want to do right by you and that means we will advise and provide you with the solutions we think are best for you.',
   },
   {
-    icon: '/image/about/about-story/icon-4.png',
+    icon: <GrCopy />,
     title: 'Responsibility',
     content: 'For us it is not about a one-time sale, we will be your technology partners and thus our approach to work in action-oriented and result driven.',
   },

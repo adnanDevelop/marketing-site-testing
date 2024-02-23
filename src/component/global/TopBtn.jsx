@@ -28,7 +28,7 @@ const TopBtn = () => {
     }, []);
 
     return (
-        <div className={`top-btn ${iconAnimation ? 'animateIcon' : ''}`}
+        <section className={`top-btn ${iconAnimation ? 'animateIcon' : ''}`}
             style={{ background: `conic-gradient(#2AABE1 ${buttonAnimation}%, #E2E2E2B0 ${buttonAnimation}%)`, }}
             onClick={topBar}
         >
@@ -38,7 +38,7 @@ const TopBtn = () => {
                     <i className="fa-solid fa-arrow-up"></i>
                 </span>
             </div>
-        </div>
+        </section>
     )
 }
 

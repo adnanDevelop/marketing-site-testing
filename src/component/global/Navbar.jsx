@@ -26,7 +26,10 @@ const Navbar = () => {
   */
   const closeNavFun = (value) => {
     setActive(false);
-    setActiveLink(value)
+    setActiveLink(value);
+    window.scrollTo({
+      top: 0,
+    })
   }
 
   const navClickFunc = (value) => {
@@ -37,7 +40,7 @@ const Navbar = () => {
   }
 
   return (
-    <div
+    <nav
       className={`navbar fixed top-0 left-0 z-20 w-full h-auto padding-inline border-b-[2px] border-b-[#FFFFFF38]  flex items-center justify-between  ${scrollAnimation ? 'nav-scroll shadow ' : ' '}`}
     >
       <div className="logo py-3">
@@ -54,12 +57,11 @@ const Navbar = () => {
               <span className="caret transition duration-300 inline-block">
                 <FaCaretDown />
               </span>
-
-              <ul className={`list-none dropdown bg-white absolute top-[120%] left-[-10%] w-[230px] p-4 rounded-md z-10 border border-soft-white transition duration-500 ease-in-out text-start  ${isDropdown ? "opacity-100 max-h-[20rem]" : "opacity-0 max-h-0 h-0"}`}>
+              <ul className={`list-none dropdown bg-white absolute h-[7.5rem] left-[-10%] w-[230px] rounded-md z-10 border border-soft-white transition duration-500 ease-in-out text-start flex items-start justify-center flex-col ${isDropdown ? "opacity-100 visibile top-[110%]" : "top-[200%] opacity-0 invisible"}`}>
                 <li>
                   <Link
                     to="/servicesolution"
-                    className={`text-[14px] capitalize font-[500]  transition duration-500 hover:text-sky-500 inline-block mb-2 ${activeLink === 'solution' ? 'text-sky-500' : 'text-black'} `}
+                    className={`ps-4 text-[14px] capitalize font-[500]  transition duration-500 hover:text-sky-500 inline-block mb-1 ${activeLink === 'solution' ? 'text-sky-500' : 'text-black'} `}
                     onClick={() => setActiveLink('solution')}
                   >
                     communication solutions
@@ -68,7 +70,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/servicesoftware"
-                    className={`text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block mb-2 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'} `}
+                    className={`ps-4 text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block mb-1 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'} `}
                     onClick={() => setActiveLink('development')}
                   >
                     software development
@@ -77,7 +79,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/serviceautomation"
-                    className={`text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
+                    className={`ps-4 text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
                     onClick={() => setActiveLink('automation')}
                   >
                     process automation
@@ -120,9 +122,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-
       <button
-        className={`menu lg:hidden block text-[20px] text-gray p-2 border border-gray transition duration-300 ${active ? " focus:border-sky-500 focus:text-sky-500" : ""
+        className={`menu lg:hidden block text-[20px] text-[#43525B] p-2 border border-[#43525B] transition duration-300 ${active ? " focus:border-sky-500 focus:text-sky-500" : ""
           } `}
         onClick={() => setActive(!active)}
       >
@@ -142,6 +143,7 @@ const Navbar = () => {
                 src="/image/logo.png"
                 alt=""
                 className="inline-block w-[150px] h-auto object-cover"
+                onClick={() => setActive(false)}
               />
             </Link>
           </div>
@@ -164,9 +166,9 @@ const Navbar = () => {
               <FaCaretDown />
             </span>
             <ul
-              className={`list-none dropdown w-full transition duration-300 shadow  ${itemActive
-                ? "max-h-[150px] h-auto opacity-100 mt-2 p-3"
-                : "max-h-0 mt-0 opacity-0 "
+              className={`list-none dropdown w-full transition duration-300 ease-in-out shadow  ${itemActive
+                ? "h-[120px] opacity-100 mt-2 p-3 visible"
+                : "h-0 mt-0 opacity-0 invisible"
                 }  rounded-md  bg-white  `}
             >
               <li>
@@ -199,51 +201,6 @@ const Navbar = () => {
             </ul>
           </button>
           <ul className="list-none flex items-start justify-start flex-col gap-4   ">
-            {/* <li>
-              <button
-                className="capitalize font-semibold text-start text-slate-500 transition duration-500 hover:text-sky-500 relative mobile_menu "
-                onClick={() => setItemActive(!itemActive)}
-              >
-                Service
-                <span className="caret transition duration-500 inline-block ">
-                  <FaCaretDown />
-                </span>
-                <ul
-                  className={`list-none dropdown w-full transition duration-300 shadow  ${itemActive
-                    ? "h-auto mt-4  p-4  opacity-100  "
-                    : "h-0 mt-0 opacity-0 "
-                    }  rounded-md  bg-white  `}
-                >
-                  <li>
-                    <Link
-                      to="/servicesolution"
-                      className={`font-xs capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-3 ${activeLink === 'solution' ? 'text-sky-500' : 'text-slate-500'}`}
-                      onClick={() => closeNavFun('solution')}
-                    >
-                      communication solutions
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/servicesoftware"
-                      className={`font-xs  capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-3 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'}`}
-                      onClick={() => closeNavFun('development')}
-                    >
-                      software development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/serviceautomation"
-                      className={`font-xs  capitalize font-normal transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
-                      onClick={() => closeNavFun('automation')}
-                    >
-                      process automation
-                    </Link>
-                  </li>
-                </ul>
-              </button>
-            </li> */}
             <li>
               <Link
                 to="/about"
@@ -284,7 +241,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -10,7 +10,7 @@ const CareerForm = () => {
     };
 
     return (
-        <div className='career_form_section md:py-[100px] py-[40px]  xl:px-[70px] px-[25px]  rounded-[20px] bg-blue lg:mx-[150px] md:mx-[100px] mx-[30px] mb-[100px] relative'>
+        <section className='career_form_section md:py-[100px] py-[40px]  xl:px-[70px] px-[25px]  rounded-[20px] bg-blue lg:mx-[150px] md:mx-[100px] mx-[30px] mb-[100px] relative'>
              <div className="w-[350px] h-auto absolute lg:bottom-[-10%] bottom-[65%] xl:left-[-25%] lg:left-[-45%]  left-[-25%] rotate-[-20deg] z-[-1] lg:block hidden" >
                 <img src="/image/shape.png" alt="" />
             </div>
@@ -53,7 +53,7 @@ const CareerForm = () => {
             </div>
 
 
-        </div>
+        </section>
     )
 }
 

@@ -2,11 +2,11 @@ import React from 'react'
 
 const AboutMission = () => {
     return (
-        <div className="relative z-10 about_mission_section xl:py-[60px] lg:py-[30px] py-[20px] pb-[40px] padding-inline md:my-[100px]  " >
+        <section className="relative z-10 about_mission_section xl:py-[60px] lg:py-[30px] pt-[20px]  padding-inline md:my-[100px]  " >
             <div className='flex lg:justify-between lg:items-center lg:flex-row flex-col  '>
             <div className="mission_content lg:basis-2/3 md:basis-2/4 basis-full lg:ps-[70px]" data-aos='fade-up' data-aos-duration='1500' data-aos-anchor-placement="center-bottom">
-                    <h2 className='xl:text-[45px] lg:text-[40px] text-[30px]  text-white font-extrabold lg:mb-5 mb-4 ' >Our Mission</h2>
-                    <p className='text-white font-secondary font-normal xl:text-[20px] md:text-[18px] text-[16px]  xl:pe-[100px] lg:pe-[100px] text-justify lg:leading-[2.2rem] sm:leading-[2rem] leading-[1.8rem] '>
+                    <h2 className='xl:text-[45px] lg:text-[40px] text-[30px]  text-white font-primary font-extrabold tracking-wide lg:mb-5 mb-4 ' >Our Mission</h2>
+                    <p className='text-white font-secondary font-normal tracking-wide xl:text-[20px] md:text-[18px] text-[16px]  xl:pe-[100px] lg:pe-[100px] text-justify lg:leading-[2.2rem] sm:leading-[2rem] leading-[1.8rem] '>
                         Enabling seamless, innovative communication solutions and transformative technologies, our mission is to empower businesses with tailored VoIP systems, cutting-edge software solutions, and intelligent automation. We strive to be the catalyst for enhanced connectivity, operational efficiency, and growth, ensuring our clients thrive in an ever-evolving business landscape.
                     </p>
                 </div>
@@ -15,7 +15,7 @@ const AboutMission = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }
 

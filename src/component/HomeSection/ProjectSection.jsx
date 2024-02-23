@@ -14,16 +14,16 @@ const ProjectSection = () => {
   }
 
   return (
-    <div className="project_section xl:before:h-[90vh] lg:before:h-[75vh] xl:before:top-[0%] lg:before:top-[4%] before:right-0  relative">
-      <div className="flex items-center justify-center lg:flex-row flex-col  padding-inline">
+    <section className="project_section xl:before:h-[80vh] lg:before:h-[80vh] lg:before:w-[75%] xl:before:top-[5%] lg:before:top-[4%] before:right-0  relative lg:mb-0 mb-[50px]">
+      <div className="flex lg:items-center justify-center lg:flex-row flex-col  padding-inline">
         <div className="project_img_section lg:basis-1/3 md:basis-2/4 basis-full" data-aos='fade-zoom-in' data-aos-duration='1500' >
           <img
             src="/image/about-img.png"
-            className="xl:w-[350px] lg:w-[300px] md:w-[400px] w-full xl:h-[400px] lg:h-[350px] sm:h-[400px] h-[350px] object-cover rounded-[15px]"
+            className="xl:w-[350px] lg:w-[300px] md:w-[320px] w-[300px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
           />
         </div>
-        <div className="project_content w-full h-[90vh] flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
+        <div className="project_content w-full lg:h-[90vh] flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
           <p className="text-white font-[300] font-heading xl:text-[22px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px]" data-aos='fade-zoom-in' data-aos-duration='1500'>
             Specializing in VoIP, software development, and intelligent
             automation, we offer tailored solutions that resonate with your
@@ -47,11 +47,11 @@ const ProjectSection = () => {
             </div>
           </ScrollTrigger>
           <div className="flex lg:justify-end justify-start mt-[40px]" data-aos='fade-zoom-in' data-aos-duration='1500' >
-            <Link to='/about' className="flex items-center capitalize font-bold text-white bg-sky-500 rounded-full md:px-[30px] px-[25px] font-heading md:py-[15px] py-[12px] md:text-[15px] text-[14px] transition duration-300  hover:text-white focus:text-white hover:scale-105" onClick={goTopFunc} >About Us <span className="ps-3"> <FaArrowRight /> </span> </Link>
+            <Link to='/about' className="flex items-center capitalize font-bold text-white bg-sky-500 rounded-full md:px-[30px] px-[25px] md:py-[15px] py-[10px] font-heading md:text-[15px] text-[14px] transition duration-300  hover:text-white focus:text-white hover:scale-105" onClick={goTopFunc} >About Us <span className="ps-3"> <FaArrowRight /> </span> </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
