@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [open, setOpen] = useState(false);
   const [itemActive, setItemActive] = useState(false);
   const [activeLink, setActiveLink] = useState(' ');
   const [scrollAnimation, setScrollAnimation] = useState(false);
-  const [isDropdown, setDropdown] = useState(false)
+  const [isDropdown, setDropdown] = useState(false);
 
 
 
@@ -22,8 +23,18 @@ const Navbar = () => {
   });
 
   /*
-     FOR CLOSING NAVBAR AND ADDING ACTIVE COLOR IN NAV LINK
+     FOR OPENING SIDE BAR
   */
+
+  const openSideBar = () => {
+    setOpen(!open)
+    setActive(!active)
+  }
+
+  /*
+     FOR CLOSING SIDEBAR AND ADDING ACTIVE COLOR IN NAV LINK
+  */
+
   const closeNavFun = (value) => {
     setActive(false);
     setActiveLink(value);
@@ -122,13 +133,26 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      {/* ANIMATED HAMBURGER */}
+      <div className="lg:hidden">
+        <button type="button" className="hamburger flex flex-col md:gap-y-[7px] gap-y-[6px]" onClick={openSideBar} >
+          <span className={`md:w-[30px] w-[25px] md:h-[2.4px] h-[2.2px] bg-[#43525B] rounded-full transform transition duration-500 ease-in-out ${open ? 'rotate-45 md:translate-y-[0.5rem] translate-y-[0.6rem]' : ''}`}></span>
+          <span className={`md:w-[30px] w-[25px] md:h-[2.4px] h-[2.4px] bg-[#43525B] rounded-full transform transition duration-500 ease-in-out ${open ? ' opacity-0' : ''}`}></span>
+          <span className={`md:w-[30px] w-[25px] md:h-[2.4px] h-[2.2px] bg-[#43525B] rounded-full transform transition duration-500 ease-in-out ${open ? ' -rotate-45 md:translate-y-[-.6rem] translate-y-[-.45rem]' : ''}`}></span>
+        </button>
+      </div>
+
+
+      {/*
+        SIMPLE HAMBURGER
       <button
         className={`menu lg:hidden block text-[20px] text-[#43525B] p-2 border border-[#43525B] transition duration-300 ${active ? " focus:border-sky-500 focus:text-sky-500" : ""
           } `}
         onClick={() => setActive(!active)}
       >
         <FaBarsStaggered />
-      </button>
+      </button> 
+      */}
 
       {/* SMALL SCREEN NAV-LINKS */}
       <div
@@ -143,13 +167,19 @@ const Navbar = () => {
                 src="/image/logo.png"
                 alt=""
                 className="inline-block w-[150px] h-auto object-cover"
-                onClick={() => setActive(false)}
+                onClick={() => {
+                  setActive(false)
+                  setOpen(false)
+                }}
               />
             </Link>
           </div>
           <button
             className="close_btn text-[16px] text-[#43525B] p-2 border-2  border-[#43525B] rounded-md transition duration-300 hover:border-sky-500 hover:text-sky-500 "
-            onClick={() => setActive(false)}
+            onClick={() => {
+              setActive(false)
+              setOpen(false)
+            }}
           >
             <GrClose />
           </button>
@@ -175,7 +205,10 @@ const Navbar = () => {
                 <Link
                   to="/servicesolution"
                   className={`text-[14px] capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-2 ${activeLink === 'solution' ? 'text-sky-500' : 'text-slate-500'}`}
-                  onClick={() => closeNavFun('solution')}
+                  onClick={() => {
+                    closeNavFun('solution')
+                    setOpen(false)
+                  }}
                 >
                   communication solutions
                 </Link>
@@ -184,7 +217,10 @@ const Navbar = () => {
                 <Link
                   to="/servicesoftware"
                   className={`text-[14px]  capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-2 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'}`}
-                  onClick={() => closeNavFun('development')}
+                  onClick={() => {
+                    closeNavFun('development')
+                    setOpen(false)
+                  }}
                 >
                   software development
                 </Link>
@@ -193,7 +229,10 @@ const Navbar = () => {
                 <Link
                   to="/serviceautomation"
                   className={`text-[14px]  capitalize font-normal transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
-                  onClick={() => closeNavFun('automation')}
+                  onClick={() => {
+                    closeNavFun('automation')
+                    setOpen(false)
+                  }}
                 >
                   process automation
                 </Link>
@@ -205,7 +244,10 @@ const Navbar = () => {
               <Link
                 to="/about"
                 className={`capitalize font-semibold text-slate transition duration-500 hover:text-blue-500 ${activeLink === 'about' ? 'text-sky-500' : 'text-slate-500'}`}
-                onClick={() => closeNavFun('about')}
+                onClick={() => {
+                  closeNavFun('about')
+                  setOpen(false)
+                }}
               >
                 about
               </Link>
@@ -215,7 +257,10 @@ const Navbar = () => {
               <Link
                 to="/career"
                 className={`capitalize font-semibold text-slate transition duration-500 hover:text-blue-500 ${activeLink === 'career' ? 'text-sky-500' : 'text-slate-500'}`}
-                onClick={() => closeNavFun('career')}
+                onClick={() => {
+                  closeNavFun('career')
+                  setOpen(false)
+                }}
               >
                 careers
               </Link>
@@ -224,7 +269,10 @@ const Navbar = () => {
               <Link
                 to="/blog"
                 className={`capitalize font-semibold text-slate transition duration-500 hover:text-blue-500 ${activeLink === 'blog' ? 'text-sky-500' : 'text-slate-500'}`}
-                onClick={() => closeNavFun('blog')}
+                onClick={() => {
+                  closeNavFun('blog')
+                  setOpen(false)
+                }}
               >
                 blogs
               </Link>
@@ -233,7 +281,10 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 className={`capitalize font-semibold text-slate transition duration-500 hover:text-blue-500 ${activeLink === 'contact' ? 'text-sky-500' : 'text-slate-500'}`}
-                onClick={() => closeNavFun('contact')}
+                onClick={() => {
+                  closeNavFun('contact')
+                  setOpen(false)
+                }}
               >
                 contact
               </Link>
