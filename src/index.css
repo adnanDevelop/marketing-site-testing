@@ -252,6 +252,22 @@ body::-webkit-scrollbar-track {
   left: 1.5rem !important;
 }
 
+.swiper-pagination-bullet {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  border-radius: 0px !important;
+  background-color: gray !important;
+  transform: rotate(45deg);
+  z-index: 100 !important;
+  cursor: pointer !important;
+  margin-right: 0.5rem !important;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2aabe1 !important;
+}
+
 /* 
   SERVICE SECTION
 */
@@ -273,7 +289,6 @@ body::-webkit-scrollbar-track {
     transform: translate(-20%, -50%);
   }
 }
-
 
 
 @media (max-width : 768px) {

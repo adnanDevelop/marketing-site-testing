@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 const AboutHero = () => {
+  const aboutSection = useRef(null);
+  const aboutHeading = useRef(null);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sectionTop = aboutSection.current.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      // Adjust this value as needed to control when the animation starts
+      const triggerOffset = 100;
+
+      if (sectionTop < windowHeight - triggerOffset) {
+        const gradientElements = aboutHeading.current;
+        gradientElements.style.backgroundPositionX = `${scrollPosition}px`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
     <>
-      <section className="relative about_section pt-[60px] overflow-x-hidden">
-        <div className="shape_img w-[400px] h-auto absolute top-[100px] md:right-[-220px] right-[-250px] md:rotate-[-155deg] rotate-[-155deg] z-[-1] md:block hidden ">
+      <section className="relative about_section pt-[60px] overflow-hidden">
+        <div className="shape_img w-[400px] h-auto absolute top-[100px] md:right-[-220px] right-[-250px] md:rotate-[-155deg] rotate-[-155deg] z-[-1] md:block hidden">
           <img src="/image/shape.png" alt="" />
         </div>
 
@@ -28,9 +52,9 @@ const AboutHero = () => {
 
         </div>
         {/* CONTENT SECTION */}
-        <div className="flex md:flex-row flex-col items-start padding-inline" data-aos='zoom-in-out' data-aos-duration='1800' data-aos-anchor-placement="center-bottom">
+        <div className="flex md:flex-row flex-col items-start padding-inline" data-aos='zoom-in-out' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" ref={aboutSection}>
           <div className="md:ps-[50px] lg:basis-1/3 md:basis-2/5">
-            <h2 className="text-black font-primary font-extrabold tracking-wide lg:text-[40px] sm:text-[30px] text-[25px] md:mb-0 mb-2 capitalize">What we do</h2>
+            <h2 className="text-black font-primary font-extrabold tracking-wide lg:text-[40px] sm:text-[30px] text-[25px] md:mb-0 mb-2 capitalize gradient_color" ref={aboutHeading}>What do we do</h2>
           </div>
           <div className="md:pe-[50px] lg:basis-2/3  md:basis-3/5" data-aos='zoom-in-out' data-aos-duration='1800' data-aos-anchor-placement="center-bottom">
             <p className="font-normal text-gray text-justify md:text-[18px] text-[15px] " >

@@ -17,7 +17,7 @@ const ContactFaq = () => {
                     const counting = index + 1;
                     return (
                         <button key={index} className={`accordin md:py-[20px] py-[15px] sm:ps-[25px] ps-[15px] md:pe-[0px] pe-[10px] select-none bg-white rounded-3xl mb-[30px] transition duration-1000 ease-in-out overflow-hidden ${openIndex === index ? 'xl:mx-[120px] md:mx-[40px]' : 'xl:mx-[140px] md:mx-[60px] overflow-hidden'} cursor-pointer`}
-                            onClick={() => handleItemClick(index)}>
+                            onMouseEnter={() => handleItemClick(index)}>
                             <h4 className='text-black font-bold font-primary tracking-[0.6px] text-left xl:text-[18px] text-[13px]'>{counting}. {element.title}</h4>
                             <div className={`flex items-start justify-center accordin_body transition duration-300 ease-in-out overflow-hidden max-h-0 ${openIndex === index ? 'max-h-[200px] visible opacity-100' : 'invisible opacity-0'}`}  >
                                 <p className=' text-justify text-last-left text-gray  md:text-[16px] text-[13px]  sm:pt-[20px] pt-[10px] md:ps-[30px] md:pe-[25px] pe-[10px]'>{element.content}</p>

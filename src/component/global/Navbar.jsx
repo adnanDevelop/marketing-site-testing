@@ -61,8 +61,8 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/servicesolution"
-                    className={`ps-4 text-[14px] capitalize font-[500]  transition duration-500 hover:text-sky-500 inline-block mb-1 ${activeLink === 'solution' ? 'text-sky-500' : 'text-black'} `}
-                    onClick={() => setActiveLink('solution')}
+                    className={`ps-4 text-[14px] capitalize font-[500]  transition duration-500 hover:text-sky-500 inline-block mb-[7px] ${activeLink === 'solution' ? 'text-sky-500' : 'text-black'} `}
+                    onClick={() => navClickFunc('solution')}
                   >
                     communication solutions
                   </Link>
@@ -70,8 +70,8 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/servicesoftware"
-                    className={`ps-4 text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block mb-1 ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'} `}
-                    onClick={() => setActiveLink('development')}
+                    className={`ps-4 text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block mb-[7px] ${activeLink === 'development' ? 'text-sky-500' : 'text-slate-500'} `}
+                    onClick={() => navClickFunc('development')}
                   >
                     software development
                   </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                   <Link
                     to="/serviceautomation"
                     className={`ps-4 text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block ${activeLink === 'automation' ? 'text-sky-500' : 'text-slate-500'} `}
-                    onClick={() => setActiveLink('automation')}
+                    onClick={() => navClickFunc('automation')}
                   >
                     process automation
                   </Link>

@@ -4,7 +4,6 @@ import { MdUpload } from "react-icons/md";
 const CareerForm = () => {
     const fileInputRef = useRef(null);
 
-
     const handleDivClick = () => {
         fileInputRef.current.click();
     };
@@ -27,12 +26,12 @@ const CareerForm = () => {
                 </div>
                 {/* UPLOAD FILE FIELD */}
                 <div className='field_one mb-4'>
-                    <p className='text-white font-normal  md:text-[18px] text-[16px] mb-2 ' >Resume*</p>
-                    <div className='w-full  lg:text-[15px] text-[14px]  md:h-[60px] h-[50px]  rounded-2xl lg:px-5 px-2  text-gray bg-white flex justify-between items-center ' onClick={handleDivClick} >
+                    <p className='text-white font-normal  md:text-[18px] text-[16px] mb-2'>Resume*</p>
+                    <div className='w-full  lg:text-[15px] text-[14px]  md:h-[60px] h-[50px] rounded-2xl lg:px-5 px-2  text-gray bg-white flex justify-between items-center ' onClick={handleDivClick} >
                         Upload your resume
                         <input type="file" id='fullName' className='text-transparent hidden ' required ref={fileInputRef} />
-                        <div className='flex items-center text-black lg:text-[18px] text-[12px] font-medium py-2 px-3 rounded-[5px] bg-soft-white cursor-pointer '>
-                            upload file <span className='ms-2'> <MdUpload /></span>
+                        <div className='flex items-center text-black md:text-[14px] text-[12px] font-medium py-2 px-3 rounded-[5px] bg-soft-white cursor-pointer '>
+                            upload file <span className='ms-2 text-[15px]'> <MdUpload /></span>
                         </div>
                     </div>
                 </div>

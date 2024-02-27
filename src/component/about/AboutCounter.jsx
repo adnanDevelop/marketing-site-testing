@@ -12,7 +12,7 @@ const AboutCounter = () => {
           <img src="/image/shape.png" alt="" />
         </div>
         {/* CLIENT */}
-        <div className="lg:basis-1/4 sm:basis-2/4 basis-full  lg:mb-0 mb-8   text-center" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
+        <div className="lg:basis-1/4 sm:basis-2/4 basis-full  lg:mb-0 mb-8 flex items-center justify-center flex-col" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
           <h2 className="text-black font-extrabold text-primary xl:text-[60px]  lg:text-[40px] sm:text-[35px] text-[30px]   leading-tight ">
             {counterOn && <CountUp start={0} end={100} duration={3} delay={0} />} <span className="text-sky-900">M</span>
           </h2>
@@ -21,7 +21,7 @@ const AboutCounter = () => {
           </p>
         </div>
         {/* SUPPORT */}
-        <div className="lg:basis-1/4 sm:basis-2/4 basis-full  lg:mb-0 mb-8   text-center" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
+        <div className="lg:basis-1/4 sm:basis-2/4 basis-full  lg:mb-0 mb-8 flex items-center justify-center flex-col" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
           <h2 className="text-black  font-extrabold  text-primary xl:text-[60px]  lg:text-[40px] sm:text-[35px] text-[30px]   leading-tight ">
             {counterOn && <CountUp start={0} end={24} duration={3} delay={0} />} <span className="text-sky-900">h</span>
           </h2>
@@ -30,7 +30,7 @@ const AboutCounter = () => {
           </p>
         </div>
         {/* SALES */}
-        <div className="lg:basis-1/4 sm:basis-2/4 basis-full lg:mb-0 mb-8   text-center" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
+        <div className="lg:basis-1/4 sm:basis-2/4 basis-full lg:mb-0 mb-8 flex items-center justify-center flex-col" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
           <h2 className="text-black font-extrabold text-primary xl:text-[60px]  lg:text-[40px] sm:text-[35px] text-[30px]  leading-tight ">
             {counterOn && <CountUp start={0} end={98} duration={3} delay={0} />} <span className="text-sky-900">k+</span>
           </h2>
@@ -39,7 +39,7 @@ const AboutCounter = () => {
           </p>
         </div>
         {/*  CLIENT */}
-        <div className="lg:basis-1/4 sm:basis-2/4 basis-full text-center" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
+        <div className="lg:basis-1/4 sm:basis-2/4 basis-full flex items-center justify-center flex-col" data-aos='fade-zoom-in' data-aos-duration='1800' data-aos-anchor-placement="center-bottom" >
           <h2 className="text-black font-extrabold text-primary xl:text-[60px]  lg:text-[40px] sm:text-[35px] text-[30px]  leading-tight ">
             {counterOn && <CountUp start={0} end={208} duration={3} delay={0} />} <span className="text-sky-900">+</span>
           </h2>
