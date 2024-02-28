@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { testContent } from "../../service/Api";
 
+
 import "swiper/css";
 import "swiper/css/navigation";
 import 'swiper/css/pagination';
@@ -96,6 +97,9 @@ const TestmonialSection = () => {
           })}
         </Swiper>
       </div>
+
+          
+
     </section>
   );
 };

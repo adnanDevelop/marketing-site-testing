@@ -191,7 +191,7 @@ export const jobDetail = {
 export const accordinContent = [
   {
     title: `How can GoMarkho enhance business communication?`,
-    content: 'What distinguishes GoMarkho is our commitment to innovation, customization, and seamless integration. We offer a comprehensive suite of services, combining expertise in VoIP, software development, and intelligent automation, ensuring that your business receives a unique, end-to-end solution tailored to your specific needs.'
+    content: 'GoMarkho specializes in providing tailored VoIP solutions, software development, and intelligent automation. We empower businesses with cost-efficient communication systems, cutting-edge software, and streamlined workflows to enhance connectivity, operational efficiency, and overall growth.'
   },
   {
     title: "What sets GoMarkho apart from other communication solution providers?",
@@ -199,15 +199,15 @@ export const accordinContent = [
   },
   {
     title: "How does the implementation work for your solutions?",
-    content: 'What distinguishes GoMarkho is our commitment to innovation, customization, and seamless integration. We offer a comprehensive suite of services, combining expertise in VoIP, software development, and intelligent automation, ensuring that your business receives a unique, end-to-end solution tailored to your specific needs.'
-  },
-  {
-    title: "What industries does GoMarkho cater to?",
-    content: 'What distinguishes GoMarkho is our commitment to innovation, customization, and seamless integration. We offer a comprehensive suite of services, combining expertise in VoIP, software development, and intelligent automation, ensuring that your business receives a unique, end-to-end solution tailored to your specific needs.'
+    content: 'Our implementation process is designed for simplicity and efficiency. We start with a thorough assessment of your requirements, followed by a seamless integration plan. Our team ensures a smooth transition, providing training and support to guarantee a successful implementation and optimal utilization of our solutions.'
   },
   {
     title: "Can GoMarkho assist with ongoing support?",
-    content: 'What distinguishes GoMarkho is our commitment to innovation, customization, and seamless integration. We offer a comprehensive suite of services, combining expertise in VoIP, software development, and intelligent automation, ensuring that your business receives a unique, end-to-end solution tailored to your specific needs.'
+    content: 'Absolutely. GoMarkho is committed to providing continuous support. Our team is available to address any queries, troubleshoot issues, and ensure that your systems are always running at their best. We offer ongoing maintenance to keep your communication infrastructure reliable and up-to-date.'
+  },
+  {
+    title: "What industries does GoMarkho cater to?",
+    content: 'GoMarkho caters to a diverse range of industries, including but not limited to [list of specific industries]. Our customizable solutions are designed to meet the unique communication needs of businesses across various sectors, ensuring versatility and adaptability to specific industry requirements.'
   },
 ]
 

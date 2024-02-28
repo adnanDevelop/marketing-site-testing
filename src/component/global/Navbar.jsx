@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { FaBarsStaggered } from "react-icons/fa6";
+// import { FaBarsStaggered } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
 import { FaCaretDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -141,7 +141,6 @@ const Navbar = () => {
           <span className={`md:w-[30px] w-[25px] md:h-[2.4px] h-[2.2px] bg-[#43525B] rounded-full transform transition duration-500 ease-in-out ${open ? ' -rotate-45 md:translate-y-[-.6rem] translate-y-[-.45rem]' : ''}`}></span>
         </button>
       </div>
-
 
       {/*
         SIMPLE HAMBURGER
