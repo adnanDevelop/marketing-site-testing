@@ -12,7 +12,6 @@ import About from "./pages/About";
 import Career from "./pages/Career";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
 import CareerSingle from "./pages/CareerSingle";
 import WorkTogether from "./pages/WorkTogether";
 import TopBtn from "./component/global/TopBtn";
@@ -41,7 +40,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/worktogether" element={<WorkTogether />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

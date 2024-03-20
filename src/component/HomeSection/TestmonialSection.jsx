@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { testContent } from "../../service/Api";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { FreeMode, Navigation, Autoplay } from "swiper/modules";
 
 const TestmonialSection = () => {
+  const swiperRef = useRef(null);
+  const swiper = useSwiper();
+  const handlePrevClick = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
+  const handleNextClick = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
   return (
     <section className="testmonial_section padding-inline mb-[40px]">
       {/* HEADER SECTION */}
@@ -25,10 +39,16 @@ const TestmonialSection = () => {
           data-aos="zoom-out"
           data-aos-duration="1500"
         >
-          <button className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] ">
+          <button
+            onClick={handlePrevClick}
+            className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] "
+          >
             <FaArrowLeft />
           </button>
-          <button className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] ">
+          <button
+            onClick={handleNextClick}
+            className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] "
+          >
             <FaArrowRight />
           </button>
         </div>
@@ -51,13 +71,11 @@ const TestmonialSection = () => {
         </div>
 
         <Swiper
+          ref={swiperRef}
           slidesPerView={3}
           grabCursor={true}
           loop={true}
           freeMode={true}
-          pagination={{
-            clickable: true,
-          }}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -80,7 +98,7 @@ const TestmonialSection = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          modules={[FreeMode, Navigation, Autoplay, Pagination]}
+          modules={[FreeMode, Navigation, Autoplay]}
           className="mySwiper"
         >
           {testContent.map((element, index) => {

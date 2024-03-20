@@ -19,7 +19,7 @@ const Footer = () => {
                   Home
                 </p>
               </Link>
-              <Link to={"/service"}>
+              <Link to={"/servicesolution"} onClick={topBar}>
                 <p className="text-white font-regular transition duration-300 hover:text-sky-500 focus:text-sky-500 text-[12px]">
                   Services
                 </p>
