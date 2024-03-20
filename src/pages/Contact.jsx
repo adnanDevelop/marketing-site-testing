@@ -1,11 +1,11 @@
-import React from 'react'
-import ContactHeader from '../component/ContactSection/ContactHeader'
-import ContactForm from '../component/ContactSection/ContactForm'
-import ContactMap from '../component/ContactSection/ContactMap'
-import ContactFaq from '../component/ContactSection/ContactFaq'
+import React from "react";
+import ContactHeader from "../component/ContactSection/ContactHeader";
+import ContactForm from "../component/ContactSection/ContactForm";
+import ContactMap from "../component/ContactSection/ContactMap";
+import ContactFaq from "../component/ContactSection/ContactFaq";
 
 const Contact = () => {
-  document.title='GoMarkho-Contact Page'
+  document.title = "GoMarkho-Contact Page";
 
   return (
     <main>
@@ -14,7 +14,7 @@ const Contact = () => {
       <ContactFaq />
       <ContactMap />
     </main>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

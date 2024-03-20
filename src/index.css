@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply font-secondary selection:bg-sky-500 selection:text-white overflow-x-hidden select-none;
+    @apply overflow-x-hidden select-none font-secondary selection:bg-sky-500 selection:text-white;
   }
 
   h1,
@@ -84,7 +84,6 @@ body::-webkit-scrollbar-thumb:hover {
 body::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0);
 }
-
 
 /* TOP BTN  */
 .top-btn {
@@ -343,6 +342,8 @@ body::-webkit-scrollbar-track {
   height: 30%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
 }
+
+/* FAQ SECTION */
 
 
 @media (max-width : 1024px) {
