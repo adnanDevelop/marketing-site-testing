@@ -11,6 +11,7 @@ import { FreeMode, Navigation, Autoplay } from "swiper/modules";
 const TestmonialSection = () => {
   const swiperRef = useRef(null);
   const swiper = useSwiper();
+
   const handlePrevClick = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.slidePrev();
