@@ -2,16 +2,15 @@ import React from "react";
 
 const CompanySection = () => {
   return (
-    <section className="discover_secion padding-block padding-inline sm:my-[0px] my-[20px] relative overflow-hidden ">
-      <p
-        className="text-center lg:text-[25px] text-[20px] text-black font-normal mb-[50px] capitalize font-primary"
-        data-aos="zoom-out"
-        data-aos-duration="1500"
-        data-aos-anchor-placement="bottom-bottom"
+    <section className="discover_secion sm:pt-[40px] pt-[20px] pb-[20px] padding-inline my-[40px] relative overflow-hidden bg-[#F3F3F3]">
+      <h2
+        className="text-[#333] capitalize text-center  xl:text-[40px] sm:text-[30px] text-[25px] font-primary font-extrabold tracking-wide"
+        // data-aos="zoom-in-out"
+        // data-aos-duration="1500"
       >
-        Discover the difference as you join a community of businesses that have
-        experienced the transformative power of our services.
-      </p>
+        Our Clients
+      </h2>
+      {/* ABSOLUTE IMAGES */}
       <div className="shape_img absolute top-[50%] translate-y-[-50%] lg:left-[-15%] md:left-[-22%] sm:left-[-30%] left-[-32%] z-[-1] rotate-[-15deg]">
         <img
           src="/image/shape.png"
@@ -26,62 +25,12 @@ const CompanySection = () => {
           alt=""
         />
       </div>
-      <div className="flex items-center xl:justify-between justify-center flex-wrap gap-x-[30px] sm:gap-x-0  ">
+      <div className="">
         <img
-          src="/image/company/img-1.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-        />
-        <img
-          src="/image/company/img-2.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-        />
-        <img
-          src="/image/company/img-3.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-        />
-        <img
-          src="/image/company/img-4.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-        />
-        <img
-          src="/image/company/img-5.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-        />
-        <img
-          src="/image/company/img-6.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-        />
-        <img
-          src="/image/company/img-7.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
-        />
-        <img
-          src="/image/company/img-8.png"
-          className="w-[130px] h-auto object-cover"
-          alt="company logo"
-          data-aos="zoom-out"
-          data-aos-duration="1500"
+          src="/image/company/company-img.gif"
+          className="mx-auto"
+          alt=""
+          width="1100px"
         />
       </div>
     </section>

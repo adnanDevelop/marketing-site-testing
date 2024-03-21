@@ -1,6 +1,5 @@
 import React from "react";
 import AboutHero from "../component/about/AboutHero";
-import AboutCounter from "../component/about/AboutCounter";
 import AboutMission from "../component/about/AboutMission";
 import AboutStory from "../component/about/AboutStory";
 import Help from "../component/global/Help";
@@ -16,7 +15,7 @@ const About = () => {
   return (
     <main>
       <AboutHero />
-      <AboutCounter />
+      {/* <AboutCounter /> */}
       <AboutMission />
       <AboutStory />
       <Help title={helpContent.helpTitle} content={helpContent.helpContent} />

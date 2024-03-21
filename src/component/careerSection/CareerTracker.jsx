@@ -8,9 +8,9 @@ const CareerTracker = () => {
         <img src="/image/shape.png" alt="" />
       </div>
       {/* TRACKER HEADER SECTION */}
-      <div className="tracker_header text-center xl:max-w-[50%] lg:max-w-[65%] md:max-w-[80%] mx-auto mb-[30px]">
+      <div className="tracker_header text-center lg:max-w-[65%] md:max-w-[80%] mx-auto mb-[30px]">
         <h2
-          className="text-black font-bold font-primary tracking-wide xl:text-[50px] lg:text-[40px] text-[30px] md:mb-4 mb-2"
+          className="text-black font-bold font-primary tracking-wide xl:text-[50px] lg:text-[40px] text-[30px] mb-2"
           data-aos="fade-in-out"
           data-aos-duration="1800"
           data-aos-anchor-placement="center-bottom"
@@ -41,7 +41,7 @@ const CareerTracker = () => {
               data-aos-duration="1800"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={element.img} alt="" />
+              <img src={element.img} alt={element.img} />
               <p className="font-normal text-black lg:text-[20px] font-secondary  text-center mt-3 leading-none">
                 {element.title}
               </p>

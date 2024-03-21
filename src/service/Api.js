@@ -34,39 +34,39 @@ export const testContent = [
     img: '/image/testmonial/img-1.svg',
   },
   {
-    title: "Brian Colombiana",
-    subtitle: "Smart Automation Systems",
+    title: "Sarah Johnson",
+    subtitle: "CEO at TeleConnect Solutions",
     content:
-      "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
-    img: '/image/testmonial/img-2.svg',
+      "GoMarkho's VoIP solutions have revolutionized our communication infrastructure. Their expertise in streamlining voice-based workflows and their prompt customer support make them a top choice for any organization.",
+    img: '/image/testmonial/img-2.png',
   },
   {
-    title: "Brian Colombiana",
-    subtitle: "Smart Automation Systems",
+    title: "John Smith",
+    subtitle: "IT Manager at ConnectGlobal",
     content:
-      "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
-    img: '/image/testmonial/img-3.svg',
+      "We've been using GoMarkho's communication platforms for years now, and we couldn't be happier. Their intuitive interfaces and seamless integration with our existing systems have greatly enhanced our team's productivity.",
+    img: '/image/testmonial/img-3.png',
   },
   {
-    title: "Brian Colombiana",
-    subtitle: "Smart Automation Systems",
+    title: "emily Brown",
+    subtitle: "Operations Director at RemoteWorks Inc.",
     content:
-      "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
-    img: '/image/testmonial/img-1.svg',
+      "The VoIP systems provided by GoMarkho have been a game-changer for our remote teams. Their reliable service and feature-rich solutions have allowed us to stay connected seamlessly, regardless of our location.",
+    img: '/image/testmonial/img-4.png',
   },
   {
-    title: "Brian Colombiana",
-    subtitle: "Smart Automation Systems",
+    title: "David Martinez",
+    subtitle: "CTO at CommuniTech Innovations",
     content:
-      "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
-    img: '/image/testmonial/img-2.svg',
+      "GoMarkho's communication solutions have exceeded our expectations. Their VoIP systems are not only reliable but also highly customizable, allowing us to tailor our communication workflows to suit our specific needs.",
+    img: '/image/testmonial/img-5.png',
   },
   {
-    title: "Brian Colombiana",
-    subtitle: "Smart Automation Systems",
+    title: "Lisa Taylor",
+    subtitle: "Customer Manager at ConnectVoice Solutions",
     content:
-      "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
-    img: '/image/testmonial/img-3.svg',
+      "GoMarkho's VoIP services have been instrumental in enhancing our customer support capabilities. Their intuitive call routing and advanced analytics features have enabled us to deliver exceptional service to our clients.",
+    img: '/image/testmonial/img-6.png',
   },
 ];
 
@@ -109,16 +109,50 @@ export const jobContent = [
     id: 0,
     title: 'Web Designer & Developer',
     location: 'Islamabad, Pakistan',
-    jobType: 'Part Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.'
+    jobType: 'Full Time',
+    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    role: [
+      "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
+      "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
+      "Optimize application performance for maximum speed and scalability.",
+      "Ensure cross-browser and cross-device compatibility by conducting thorough testing and debugging.",
+      "Implement and maintain frontend build pipelines and automation tools.",
+      "Stay updated on emerging frontend technologies and best practices.",
+      "Troubleshoot and resolve frontend-related issues as they arise",
+    ],
+    requirement: [
+      "BS/MS degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a quality assurance tester.",
+      "Strong knowledge of software QA methodologies, tools, and processes.",
+      "Experience in writing concise, and comprehensive test plans and test cases.",
+      "Hands-on experience with both white box and black box testing.",
+      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+    ],
   },
 
   {
     id: 1,
     title: 'Front-end developer',
     location: 'Islamabad, Pakistan',
-    jobType: 'Part Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.'
+    jobType: 'Full Time',
+    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    role: [
+      "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
+      "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
+      "Optimize application performance for maximum speed and scalability.",
+      "Ensure cross-browser and cross-device compatibility by conducting thorough testing and debugging.",
+      "Implement and maintain frontend build pipelines and automation tools.",
+      "Stay updated on emerging frontend technologies and best practices.",
+      "Troubleshoot and resolve frontend-related issues as they arise",
+    ],
+    requirement: [
+      "BS/MS degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a quality assurance tester.",
+      "Strong knowledge of software QA methodologies, tools, and processes.",
+      "Experience in writing concise, and comprehensive test plans and test cases.",
+      "Hands-on experience with both white box and black box testing.",
+      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+    ],
   },
 
   {
@@ -126,7 +160,25 @@ export const jobContent = [
     title: 'Quality Assurance Engineer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.'
+    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    role: [
+      "Review, analyse and evaluate product code according to system specifications.",
+      "Create and execute detailed and well-structured test plans and test cases (manual or automated) and analyse results.",
+      "Plan and coordinate testing activities.",
+      "Create logs to identify, track and document testing phases and defects.",
+      "Design, develop and execute automation scripts using open-source tools (Jira, Selenium, JMeter)",
+      "Perform thorough regression testing when bugs are resolved.",
+      "Develop and apply testing processes for new and existing products to meet client needs.",
+      "Work with cross-functional teams to ensure quality throughout the software development lifecycle.",
+    ],
+    requirement: [
+      "BS/MS degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a quality assurance tester.",
+      "Strong knowledge of software QA methodologies, tools, and processes.",
+      "Experience in writing concise, and comprehensive test plans and test cases.",
+      "Hands-on experience with both white box and black box testing.",
+      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+    ],
   },
 
   {
@@ -134,23 +186,74 @@ export const jobContent = [
     title: 'UI / UX Designer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.'
+    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    role: [
+      "Collaborate with product managers and developers to understand user requirements and business goals.",
+      "Design intuitive and visually appealing user interfaces for web and mobile applications.",
+      "Create wireframes, prototypes, and mockups to communicate design concepts effectively.",
+      "Conduct user research, including interviews, surveys, and usability testing, to gather insights and validate design decisions.",
+      "Iterate on designs based on feedback from stakeholders and end-users.",
+      "Work closely with development teams to ensure seamless implementation of designs.",
+      "Stay updated on industry trends and best practices in UI/UX design.",
+    ],
+    requirement: [
+      "Bachelor's or Master's degree in Design, Human-Computer Interaction, or a related field.",
+      "Proven experience of 0 – 3 years as a UI/UX Designer, with a strong portfolio showcasing your design skills and process.",
+      "Proficiency in design tools such as Adobe XD, Sketch, Figma, or similar.",
+      "Strong understanding of user-centered design principles and methodologies.",
+      "Experience with user research techniques and usability testing.",
+      "Familiarity with front-end development technologies (HTML, CSS, JavaScript) is a plus.",
+    ]
   },
 
   {
     id: 4,
     title: 'Backend Developer',
     location: 'Islamabad, Pakistan',
-    jobType: 'Part Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.'
+    jobType: 'Full Time',
+    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    role: [
+      "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
+      "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
+      "Optimize application performance for maximum speed and scalability.",
+      "Ensure cross-browser and cross-device compatibility by conducting thorough testing and debugging.",
+      "Implement and maintain frontend build pipelines and automation tools.",
+      "Stay updated on emerging frontend technologies and best practices.",
+      "Troubleshoot and resolve frontend-related issues as they arise",
+    ],
+    requirement: [
+      "BS/MS degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a quality assurance tester.",
+      "Strong knowledge of software QA methodologies, tools, and processes.",
+      "Experience in writing concise, and comprehensive test plans and test cases.",
+      "Hands-on experience with both white box and black box testing.",
+      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+    ],
   },
 
   {
     id: 5,
     title: 'Devops Engineer',
     location: 'Islamabad, Pakistan',
-    jobType: 'Part Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.'
+    jobType: 'Full Time',
+    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    role: [
+      "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
+      "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
+      "Optimize application performance for maximum speed and scalability.",
+      "Ensure cross-browser and cross-device compatibility by conducting thorough testing and debugging.",
+      "Implement and maintain frontend build pipelines and automation tools.",
+      "Stay updated on emerging frontend technologies and best practices.",
+      "Troubleshoot and resolve frontend-related issues as they arise",
+    ],
+    requirement: [
+      "BS/MS degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a quality assurance tester.",
+      "Strong knowledge of software QA methodologies, tools, and processes.",
+      "Experience in writing concise, and comprehensive test plans and test cases.",
+      "Hands-on experience with both white box and black box testing.",
+      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+    ],
   },
 
 ]
@@ -215,34 +318,26 @@ export const accordinContent = [
 // BLOG CONTENT
 export const blogContent = [
   {
-    date: 'November 15, 2022',
-    title: '10 Top tips for making automation less time consuming',
-    content: 'here we show an overview of our main topic.  like what top 10 tips do in return of which is most easiest one, anything. '
+    date: 'January 04, 2023',
+    title: 'Mastering the Art of Digital Marketing',
+    content: 'Navigate remote work successfully with strategies for productivity and maintaining work-life balance.',
+    link: "https://coda.io/d/Mastering-the-Art-of-Digital-Marketing_dm64V67-ehs/Mastering-the-Art-of-Digital-Marketing-Strategies-for-Success-in_suZiB#_luI6y",
   },
   {
-    date: 'November 15, 2022',
-    title: '10 Top tips for making automation less time consuming',
-    content: 'here we show an overview of our main topic.  like what top 10 tips do in return of which is most easiest one, anything. '
+    date: 'January 15, 2023',
+    title: 'Navigating the New Normal: Strategies for Remote Work Success',
+    content: 'Navigate remote work successfully with strategies for productivity and maintaining work-life balance.',
+    link: "https://coda.io/d/Navigating-the-New-Normal_dWI-cjFdsH3/Navigating-the-New-Normal-Strategies-for-Remote-Work-Success_su7q4#_luvtH",
   },
   {
-    date: 'November 15, 2022',
-    title: '10 Top tips for making automation less time consuming',
-    content: 'here we show an overview of our main topic.  like what top 10 tips do in return of which is most easiest one, anything. '
+    date: 'February 18, 2023',
+    title: 'Unleashing the Power of VoIP',
+    content: `Discover global connectivity and seamless collaboration solutions with VoIP's communication revolution.`,
   },
   {
-    date: 'November 15, 2022',
-    title: '10 Top tips for making automation less time consuming',
-    content: 'here we show an overview of our main topic.  like what top 10 tips do in return of which is most easiest one, anything. '
-  },
-  {
-    date: 'November 15, 2022',
-    title: '10 Top tips for making automation less time consuming',
-    content: 'here we show an overview of our main topic.  like what top 10 tips do in return of which is most easiest one, anything. '
-  },
-  {
-    date: 'November 15, 2022',
-    title: '10 Top tips for making automation less time consuming',
-    content: 'here we show an overview of our main topic.  like what top 10 tips do in return of which is most easiest one, anything. '
+    date: 'March 10, 2023',
+    title: '10 Tips for Making Automation Easy',
+    content: `Streamline tasks effortlessly with 10 automation tips for boosted efficiency in your workflow.`
   },
 ]
 

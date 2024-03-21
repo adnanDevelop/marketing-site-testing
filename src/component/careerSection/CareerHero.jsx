@@ -7,7 +7,7 @@ const CareerHero = () => {
         <img src="/image/shape.png" alt="" />
       </div>
       <div
-        className="text-center about_work_section md:pt-[120px] pt-[100px] pb-[80px] flex items-center justify-center flex-col "
+        className="text-center about_work_section md:pt-[120px] pt-[100px] md:pb-[80px] pb-[50px] flex items-center justify-center flex-col "
         data-aos="zoom-in-out"
         data-aos-duration="1800"
         data-aos-anchor-placement="center-bottom"
@@ -25,22 +25,22 @@ const CareerHero = () => {
 
       {/* CAREER GALLERY SECTION */}
       <div
-        className="xl:px-[150px] md:mx-[50px]  grid sm:grid-cols-2 grid-cols-1 sm:gap-y-0 gap-y-4  lg:gap-x-[30px] md:gap-x-[20px] gap-x-[15px]"
+        className="xl:px-[100px] md:mx-[20px]  grid md:grid-cols-2 grid-cols-1 md:gap-y-0 gap-y-4  lg:gap-x-[30px] md:gap-x-[20px] gap-x-[15px]"
         data-aos="zoom-in-out"
         data-aos-duration="1800"
         data-aos-anchor-placement="center-bottom"
       >
         <div className="flex items-center justify-center">
           <img
-            src="/image/career/career-header/img-1.jpg"
-            className="w-full lg:h-[450px] h-[300px] rounded-[30px] object-cover"
+            src="/image/career/career-header/img-1.png"
+            className="w-full lg:h-[400px] h-[250px] rounded-[30px] object-cover"
             alt=""
           />
         </div>
         <div className="flex items-center justify-center">
           <img
-            src="/image/career/career-header/img-2.jpg"
-            className="w-full lg:h-[450px] h-[300px] rounded-[30px] object-cover"
+            src="/image/career/career-header/img-2.png"
+            className="w-full lg:h-[400px] h-[250px] rounded-[30px] object-cover"
             alt=""
           />
         </div>

@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { FreeMode, Navigation, Autoplay } from "swiper/modules";
+import { FreeMode, Navigation, Autoplay, Pagination } from "swiper/modules";
 
 const TestmonialSection = () => {
   const swiperRef = useRef(null);
@@ -74,6 +74,9 @@ const TestmonialSection = () => {
         <Swiper
           ref={swiperRef}
           slidesPerView={3}
+          pagination={{
+            clickable: true,
+          }}
           grabCursor={true}
           loop={true}
           freeMode={true}
@@ -88,31 +91,31 @@ const TestmonialSection = () => {
             },
             1024: {
               slidesPerView: 2,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
             1160: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
           }}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
-          modules={[FreeMode, Navigation, Autoplay]}
+          modules={[FreeMode, Navigation, Autoplay, Pagination]}
           className="mySwiper"
         >
           {testContent.map((element, index) => {
             return (
-              <SwiperSlide className="lg:px-[10px] px-[5px]" key={index}>
-                <div className="mb-[50px] mt-[40px] basis testmonial_card shadow-xl rounded-xl bg-white  sm:px-[30px] px-[20px] py-[40px]">
-                  <p className="text-justify mb-[20px] text-[18px] tracking-wide">
+              <SwiperSlide className="lg:px-[10px] px-[5px] " key={index}>
+                <div className="mb-[50px] mt-[40px] basis testmonial_card shadow-xl rounded-xl bg-white  sm:px-[25px] px-[20px] py-[40px]">
+                  <p className="mb-[20px] xl:text-[16px] tracking-wide">
                     {element.content}
                   </p>
-                  <div className="flex items-center gap-4 ">
+                  <div className="flex items-center gap-4">
                     <img
                       src={element.img}
-                      className="xl:w-[50px] w-[60px]  xl:h-[50px] h-[60px]  object-cover"
+                      className="xl:w-[50px] w-[60px] xl:h-[50px] h-[60px] rounded-full object-cover"
                       alt=""
                     />
                     <div>

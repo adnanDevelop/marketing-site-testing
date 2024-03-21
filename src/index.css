@@ -29,7 +29,7 @@
   }
 
   .btn-primary-md {
-    @apply px-[25px] h-[50px] text-[14px] bg-sky-500 rounded-[5px] transition duration-300 hover:scale-105 text-white font-semibold tracking-[1.5px] flex items-center justify-center;
+    @apply px-[25px] 2xl:px-[35px] 2xl:h-[60px] h-[50px] 2xl:text-[16px] text-[14px] bg-sky-500 rounded-[5px] transition duration-300 hover:scale-105 text-white font-semibold tracking-[1.5px] flex items-center justify-center;
   }
 
 
@@ -254,13 +254,13 @@ body::-webkit-scrollbar-track {
 .swiper-pagination-bullet {
   width: 0.5rem !important;
   height: 0.5rem !important;
-  border-radius: 0px !important;
+  border-radius: 50% !important;
   background-color: gray !important;
-  transform: rotate(45deg);
   z-index: 100 !important;
   cursor: pointer !important;
   margin-right: 0.5rem !important;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2) !important;
+  z-index: 100 !important;
 }
 
 .swiper-pagination-bullet-active {

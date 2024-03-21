@@ -67,7 +67,7 @@ const ProjectSection = () => {
                 <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold">
                   {" "}
                   {counterOn && (
-                    <CountUp start={0} end={200} duration={3} delay={0} />
+                    <CountUp start={0} end={50} duration={3} delay={0} />
                   )}
                   +
                 </p>
