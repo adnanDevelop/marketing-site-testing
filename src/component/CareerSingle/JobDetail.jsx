@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { jobDetail } from "../../service/Api";
+// import { jobDetail } from "../../service/Api";
 
 const JobDetail = ({ data }) => {
-  const { role, requirement } = jobDetail;
-  console.log(data, role);
+  // const { role, requirement } = jobDetail;
+  const { requirement, role } = data[0];
 
   return (
     <>
@@ -47,14 +47,6 @@ const JobDetail = ({ data }) => {
 
           {/* ROLE POINTS */}
           <div className="mt-4 detail_points">
-            <p
-              className="text-normal text-gray text-secondary mb-4 sm:text-[16px] text-[14px]"
-              data-aos="zoom-in-out"
-              data-aos-duration="1800"
-            >
-              Review, analyse and evaluate product code according to system
-              specifications.
-            </p>
             <ul className="list-disc ">
               {role.map((element, index) => {
                 return (

@@ -32,40 +32,43 @@ export const testContent = [
     content:
       "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
     img: '/image/testmonial/img-1.svg',
+    videoLink: "/image/testmonial/vide0-1.mp4"
   },
   {
     title: "Sarah Johnson",
     subtitle: "CEO at TeleConnect Solutions",
     content:
-      "GoMarkho's VoIP solutions have revolutionized our communication infrastructure. Their expertise in streamlining voice-based workflows and their prompt customer support make them a top choice for any organization.",
+      "GoMarkho's VoIP solutions have revolutionized our communication infrastructure. Their expertise in streamlining voice-based workflows make them a top choice for any organization.",
     img: '/image/testmonial/img-2.png',
+    videoLink: "/image/testmonial/vide0-1.mp4"
   },
   {
     title: "John Smith",
     subtitle: "IT Manager at ConnectGlobal",
     content:
-      "We've been using GoMarkho's communication platforms for years now, and we couldn't be happier. Their intuitive interfaces and seamless integration with our existing systems have greatly enhanced our team's productivity.",
+      "The VoIP systems provided by GoMarkho have been a game-changer for our remote teams. Their reliable service has allowed us to stay connected seamlessly, regardless of our location.",
     img: '/image/testmonial/img-3.png',
+    videoLink: "/image/testmonial/vide0-2.mp4"
   },
   {
     title: "emily Brown",
     subtitle: "Operations Director at RemoteWorks Inc.",
     content:
-      "The VoIP systems provided by GoMarkho have been a game-changer for our remote teams. Their reliable service and feature-rich solutions have allowed us to stay connected seamlessly, regardless of our location.",
+      "GoMarkho IT services and solutions are recommended to you. One of the best feature is their turnaround time. Whenever any assistance is needed it’s pretty much 24/7.",
     img: '/image/testmonial/img-4.png',
   },
   {
     title: "David Martinez",
     subtitle: "CTO at CommuniTech Innovations",
     content:
-      "GoMarkho's communication solutions have exceeded our expectations. Their VoIP systems are not only reliable but also highly customizable, allowing us to tailor our communication workflows to suit our specific needs.",
+      "GoMarkho's VoIP services have been instrumental in enhancing our customer support capabilities. Their intuitive call routing has enabled us to deliver exceptional service to our clients.",
     img: '/image/testmonial/img-5.png',
   },
   {
     title: "Lisa Taylor",
     subtitle: "Customer Manager at ConnectVoice Solutions",
     content:
-      "GoMarkho's VoIP services have been instrumental in enhancing our customer support capabilities. Their intuitive call routing and advanced analytics features have enabled us to deliver exceptional service to our clients.",
+      "Choosing GoMarkho was a gamechanger for our us. Their expertise in VoIP, and automation has streamlined our communication processes, delivering unmatched efficiency. ",
     img: '/image/testmonial/img-6.png',
   },
 ];
@@ -107,26 +110,26 @@ export const trackerContent = [
 export const jobContent = [
   {
     id: 0,
-    title: 'Web Designer & Developer',
+    title: 'Project Manager',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    content: 'Lead the successful delivery of projects, overseeing timelines, budgets, and resources to achieve client objectives.',
     role: [
-      "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
-      "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
-      "Optimize application performance for maximum speed and scalability.",
-      "Ensure cross-browser and cross-device compatibility by conducting thorough testing and debugging.",
-      "Implement and maintain frontend build pipelines and automation tools.",
-      "Stay updated on emerging frontend technologies and best practices.",
-      "Troubleshoot and resolve frontend-related issues as they arise",
+      "Lead the planning and execution of projects, including VoIP system deployments as well as other projects as assigned.",
+      "Define project scope, objectives, and deliverables in collaboration with stakeholders and clients.",
+      "Develop project plans, timelines, and budgets, and track progress against milestones and KPIs.",
+      "Coordinate with internal teams and external vendors to ensure timely delivery of project deliverables.",
+      "Communicate project status, risks, and issues to stakeholders and propose solutions to mitigate risks and resolve issues.",
+      "Conduct regular project meetings, including kick-off meetings, status meetings, and post-mortem reviews.",
+      "Monitor project budget and expenses, and ensure adherence to budget constraints and financial targets.",
+      "Ensure compliance with project management methodologies and best practices."
     ],
     requirement: [
-      "BS/MS degree in Computer Science, Engineering, or a related field.",
-      "Proven experience of 0 – 3 years as a quality assurance tester.",
-      "Strong knowledge of software QA methodologies, tools, and processes.",
-      "Experience in writing concise, and comprehensive test plans and test cases.",
-      "Hands-on experience with both white box and black box testing.",
-      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+      "Bachelor's or Master's degree in Project Management, Business Administration, or a related field.",
+      "Proven experience of 0 – 3 years as a Project Manager, with experience in managing VoIP-related projects being a plus.",
+      "Strong understanding of project management principles, methodologies, and tools.",
+      "Excellent communication, leadership, and stakeholder management skills.",
+      "Strong analytical and problem-solving skills, with the ability to identify and address project risks and issues proactively.",
     ],
   },
 
@@ -135,7 +138,7 @@ export const jobContent = [
     title: 'Front-end developer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    content: 'Bring design mockups to life with responsive and interactive web interfaces, enhancing user engagement.',
     role: [
       "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
       "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
@@ -146,12 +149,13 @@ export const jobContent = [
       "Troubleshoot and resolve frontend-related issues as they arise",
     ],
     requirement: [
-      "BS/MS degree in Computer Science, Engineering, or a related field.",
-      "Proven experience of 0 – 3 years as a quality assurance tester.",
-      "Strong knowledge of software QA methodologies, tools, and processes.",
-      "Experience in writing concise, and comprehensive test plans and test cases.",
+      "Bachelor's or Master's degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a Frontend Developer, with a strong portfolio showcasing your coding skills.",
+      "Proficiency in HTML, CSS, and JavaScript, with experience in modern frontend frameworks such as React, Angular.",
+      "Solid understanding of responsive design principles and mobile-first development.",
+      "Experience with version control systems (e.g., Git) and frontend build tools (e.g., Webpack, Gulp).",
       "Hands-on experience with both white box and black box testing.",
-      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+      "Strong problem-solving skills and attention to detail.",
     ],
   },
 
@@ -160,7 +164,7 @@ export const jobContent = [
     title: 'Quality Assurance Engineer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    content: 'Ensure the seamless functionality and reliability of our products through meticulous testing and analysis.',
     role: [
       "Review, analyse and evaluate product code according to system specifications.",
       "Create and execute detailed and well-structured test plans and test cases (manual or automated) and analyse results.",
@@ -186,7 +190,7 @@ export const jobContent = [
     title: 'UI / UX Designer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    content: 'Craft intuitive and visually engaging user experiences for our digital products with user-centric design principles.',
     role: [
       "Collaborate with product managers and developers to understand user requirements and business goals.",
       "Design intuitive and visually appealing user interfaces for web and mobile applications.",
@@ -211,48 +215,49 @@ export const jobContent = [
     title: 'Backend Developer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    content: 'Build robust and scalable server-side solutions to power our web applications, ensuring optimal performance.',
     role: [
-      "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
-      "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
-      "Optimize application performance for maximum speed and scalability.",
-      "Ensure cross-browser and cross-device compatibility by conducting thorough testing and debugging.",
-      "Implement and maintain frontend build pipelines and automation tools.",
-      "Stay updated on emerging frontend technologies and best practices.",
-      "Troubleshoot and resolve frontend-related issues as they arise",
+      "Design and develop server-side logic and database schemas for web applications.",
+      "Collaborate with frontend developers and UI/UX designers to integrate frontend components with backend functionality.",
+      "Implement RESTful APIs and microservices to facilitate communication between frontend and backend systems.",
+      "Optimize application performance and scalability by implementing caching mechanisms, database indexing, and other optimization techniques.",
+      "Implement security features and protocols to protect sensitive data and prevent unauthorized access.",
+      "Monitor and troubleshoot backend-related issues, including performance bottlenecks and system failures.",
+      "Stay updated on emerging backend technologies and best practices.",
     ],
     requirement: [
-      "BS/MS degree in Computer Science, Engineering, or a related field.",
-      "Proven experience of 0 – 3 years as a quality assurance tester.",
-      "Strong knowledge of software QA methodologies, tools, and processes.",
-      "Experience in writing concise, and comprehensive test plans and test cases.",
-      "Hands-on experience with both white box and black box testing.",
-      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+      "Bachelor's or Master's degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a Backend Developer, with a strong portfolio showcasing your coding skills.",
+      "Proficiency in backend programming languages such as Java, Python, Node.js, or Ruby.",
+      "Experience with backend frameworks such as Spring Boot, Django, Express.js, or Ruby on Rails.",
+      "Solid understanding of relational and NoSQL databases, including database design and optimization.",
+      "Familiarity with cloud platforms and services (e.g., AWS, Azure, Google Cloud Platform).",
     ],
   },
 
   {
     id: 5,
-    title: 'Devops Engineer',
+    title: 'Devops/VoIP Engineer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'It is a long established fact that a reader will be distracted by the readable. Lorem Ipsum looking at it layout.',
+    content: 'Architect and automate the deployment and management of VoIP solutions, ensuring high availability, scalability, and security.',
     role: [
-      "Develop responsive and user-friendly web interfaces based on design mockups and wireframes.",
-      "Collaborate with UI/UX designers and backend developers to bridge the gap between design and technical implementation.",
-      "Optimize application performance for maximum speed and scalability.",
-      "Ensure cross-browser and cross-device compatibility by conducting thorough testing and debugging.",
-      "Implement and maintain frontend build pipelines and automation tools.",
-      "Stay updated on emerging frontend technologies and best practices.",
-      "Troubleshoot and resolve frontend-related issues as they arise",
+      "Design, implement, and maintain  VoIP solutions, using tools such as Terraform, Ansible, or Chef.",
+      "Configure and manage VoIP platforms and systems, such as Asterisk, FreeSWITCH, or Cisco Unified Communications Manager.",
+      "Automate deployment, scaling, and monitoring of VoIP services using containerization technologies (e.g., Docker, Kubernetes).",
+      "Collaborate  to implement CI/CD pipelines for automated testing, and deployment of VoIP applications and services.",
+      "Monitor and troubleshoot VoIP-related issues, and implement solutions to address them proactively.",
+      "Implement security measures and best practices to protect VoIP infrastructure and data from unauthorized access.",
+      "Provide support and technical expertise to operations and support teams for diagnosing and resolving VoIP-related issues.",
+      "Stay updated on emerging technologies and best practices in DevOps and VoIP engineering, and recommend improvements to infrastructure and processes."
     ],
     requirement: [
-      "BS/MS degree in Computer Science, Engineering, or a related field.",
-      "Proven experience of 0 – 3 years as a quality assurance tester.",
-      "Strong knowledge of software QA methodologies, tools, and processes.",
-      "Experience in writing concise, and comprehensive test plans and test cases.",
-      "Hands-on experience with both white box and black box testing.",
-      "Experience in GUI test automation by using Selenium Web Driver (Web application)",
+      "Bachelor's or Master's degree in Computer Science, Engineering, or a related field.",
+      "Proven experience of 0 – 3 years as a DevOps Engineer, with experience in VoIP engineering being a plus.",
+      "Strong understanding of DevOps principles and practices, including continuous integration, and continuous deployment.",
+      "Experience with cloud platforms and services (e.g., AWS, Azure, Google Cloud Platform).",
+      "Proficiency in scripting and programming languages such as Python, Bash, or Ruby.",
+      "Familiarity with VoIP protocols and technologies, such as SIP, RTP, VoIP codecs, and VoIP platforms/systems.",
     ],
   },
 
@@ -266,28 +271,6 @@ export const hiringContent = [
   { img: '/image/career/career-hiring/img-3.svg', title: '03', subtitle: 'interviews', content: 'Our interviewing process is competency-based, designed to identify individuals thrive.' },
   { img: '/image/career/career-hiring/img-4.svg', title: '04', subtitle: 'on borading', content: 'Our onboarding process will refine and prepare you for your professional journey with GoMarkho.' },
 ];
-
-
-// JOB DETAIL POINTS
-export const jobDetail = {
-  role: [
-    'Create and execute detailed and well-structured test plans and test cases (manual or automated) and analyse results.',
-    'Plan and coordinate testing activities.',
-    'Create logs to identify, track and document testing phases and defects. ',
-    'Design, develop and execute automation scripts using open-source tools (Jira, Selenium, JMeter).',
-    'Perform thorough regression testing when bugs are resolved.',
-    'Develop and apply testing processes for new and existing products to meet client needs.',
-    'Work with cross-functional teams to ensure quality throughout the software development lifecycle.',
-  ],
-  requirement: [
-    'BS/MS degree in Computer Science, Engineering, or a related field.',
-    'Proven experience of 3 – 5 years as a quality assurance tester.',
-    'Strong knowledge of software QA methodologies, tools, and processes.',
-    'Experience in writing concise, and comprehensive test plans and test cases.',
-    'Hands-on experience with both white box and black box testing.',
-    'Experience in GUI test automation by using Selenium Web Driver (Web application)',
-  ],
-}
 
 
 // CONTACT ACCORDIN CONTENT
@@ -325,7 +308,7 @@ export const blogContent = [
   },
   {
     date: 'January 15, 2023',
-    title: 'Navigating the New Normal: Strategies for Remote Work Success',
+    title: 'Strategies for Remote Work Success',
     content: 'Navigate remote work successfully with strategies for productivity and maintaining work-life balance.',
     link: "https://coda.io/d/Navigating-the-New-Normal_dWI-cjFdsH3/Navigating-the-New-Normal-Strategies-for-Remote-Work-Success_su7q4#_luvtH",
   },

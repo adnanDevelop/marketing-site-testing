@@ -1,6 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { testContent } from "../../service/Api";
+
+// LIGHT GALLERY
+import LightGallery from "lightgallery/react";
+
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,6 +21,7 @@ import { FreeMode, Navigation, Autoplay, Pagination } from "swiper/modules";
 const TestmonialSection = () => {
   const swiperRef = useRef(null);
   const swiper = useSwiper();
+  const [isvideo, showVideo] = useState(false);
 
   const handlePrevClick = () => {
     if (swiperRef.current) {
@@ -63,7 +74,7 @@ const TestmonialSection = () => {
             alt=""
           />
         </div>
-        <div className="quote_icon_two absolute z-[10] right-0 sm:bottom-[15%] lg:bottom-[24%] md:bottom-[18%] bottom-[13%] rotate-[180deg] sm:block hidden">
+        <div className="quote_icon_two absolute z-[10] right-0 sm:bottom-[10%] lg:bottom-[14%] rotate-[180deg] sm:block hidden">
           <img
             src="/image/testmonial/quote-1.png"
             className="sm:w-[45px] w-[35px]"
@@ -108,8 +119,8 @@ const TestmonialSection = () => {
           {testContent.map((element, index) => {
             return (
               <SwiperSlide className="lg:px-[10px] px-[5px] " key={index}>
-                <div className="mb-[50px] mt-[40px] basis testmonial_card shadow-xl rounded-xl bg-white  sm:px-[25px] px-[20px] py-[40px]">
-                  <p className="mb-[20px] xl:text-[16px] tracking-wide">
+                <div className="mb-[50px] mt-[40px] basis testmonial_card shadow-xl rounded-xl bg-white  sm:px-[20px] px-[20px] pt-[40px] pb-[30px]">
+                  <p className="mb-[20px] xl:text-[16px] tracking-wide text-justify">
                     {element.content}
                   </p>
                   <div className="flex items-center gap-4">
@@ -127,6 +138,20 @@ const TestmonialSection = () => {
                       </p>
                     </div>
                   </div>
+                  {element.videoLink && (
+                    <div className="flex justify-end mt-3">
+                      <button
+                        type="button"
+                        className="flex items-center justify-end font-semibold text-sky-500"
+                        onClick={() => showVideo(true)}
+                      >
+                        Learn more
+                        <span className="ps-3">
+                          <FaArrowRight />
+                        </span>
+                      </button>
+                    </div>
+                  )}
                 </div>
               </SwiperSlide>
             );
