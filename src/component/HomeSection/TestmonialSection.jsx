@@ -133,20 +133,20 @@ const TestmonialSection = () => {
                       </p>
                     </div>
                   </div>
-                  {element.videoLink && (
-                    <div className="flex justify-end mt-3">
-                      <button
-                        type="button"
-                        className="flex items-center justify-end font-semibold text-sky-500"
-                        onClick={() => setFile(element.videoLink)}
-                      >
-                        Learn more
-                        <span className="ps-3">
-                          <FaArrowRight />
-                        </span>
-                      </button>
-                    </div>
-                  )}
+                  <div className="flex justify-end mt-3">
+                    <button
+                      type="button"
+                      className={`${
+                        element.videoLink ? "text-sky-500" : "text-white"
+                      } flex items-center justify-end font-semibold`}
+                      onClick={() => setFile(element.videoLink)}
+                    >
+                      Learn more
+                      <span className="ps-3">
+                        <FaArrowRight />
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </SwiperSlide>
             );
@@ -158,6 +158,7 @@ const TestmonialSection = () => {
   );
 };
 
+// MODAL
 const Modal = ({ video, setFile }) => {
   return (
     <>

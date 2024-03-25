@@ -45,14 +45,14 @@ export const testContent = [
     title: "John Smith",
     subtitle: "IT Manager at ConnectGlobal",
     content:
-      "The VoIP systems provided by GoMarkho have been a game-changer for our remote teams. Their reliable service has allowed us to stay connected seamlessly, regardless of our location.",
+      "GoMarkho's VoIP and automation expertise revolutionized our communication, delivering unmatched efficiency and transforming our operations.",
     img: '/image/testmonial/img-3.png',
   },
   {
     title: "emily Brown",
     subtitle: "Operations Director at RemoteWorks Inc.",
     content:
-      "GoMarkho IT services and solutions are recommended to you. One of the best feature is their turnaround time. Whenever any assistance is needed it’s pretty much 24/7.",
+      "GoMarkho IT services are highly recommended for their exceptional 24/7 turnaround time, ensuring swift resolution of all assistance needs with efficiency and reliability.",
     img: '/image/testmonial/img-4.png',
   },
   {
