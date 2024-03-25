@@ -31,15 +31,14 @@ export const testContent = [
     subtitle: "Smart Automation Systems",
     content:
       "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
-    img: '/image/testmonial/img-1.svg',
+    img: '/image/testmonial/img-1.png',
     videoLink: "/image/testmonial/video-1.mp4"
   },
   {
-    title: "Sarah Johnson",
+    title: "Marcos Manzi",
     subtitle: "CEO at TeleConnect Solutions",
-    content:
-      "GoMarkho's VoIP solutions have revolutionized our communication infrastructure. Their expertise in streamlining voice-based workflows make them a top choice for any organization.",
-    img: '/image/testmonial/img-2.png',
+    content: `GoMarkho's VoIP solutions revolutionize communication infrastructure, making them a top choice for organizations seeking streamlined voice workflows.`,
+    img: "/image/testmonial/img-5.png",
     videoLink: "/image/testmonial/video-2.mp4"
   },
   {
@@ -71,7 +70,6 @@ export const testContent = [
     img: '/image/testmonial/img-6.png',
   },
 ];
-
 // ABOUT STORY CONTENT
 export const storyContent = [
   {
