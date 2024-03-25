@@ -49,7 +49,7 @@ const CareerForm = ({ position }) => {
   };
 
   return (
-    <div>
+    <div id="form">
       <h2 className="text-black font-bold text-center font-primary tracking-wide xl:text-[50px] lg:text-[40px] text-[30px] capitalize  leading-none md:pb-10 pb-6 ">
         Apply Now
       </h2>

@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import { jobDetail } from "../../service/Api";
 
 const JobDetail = ({ data }) => {
-  // const { role, requirement } = jobDetail;
   const { requirement, role } = data[0];
 
   return (
@@ -25,12 +22,9 @@ const JobDetail = ({ data }) => {
             {data[0].location} <span className="mx-2">|</span>{" "}
             <span className="text-sky-500">{data[0].jobType}</span>
           </p>
-          <Link
-            to="/worktogether"
-            className="mt-3 capitalize btn-primary-md md:mt-5 "
-          >
+          <a href="#form" className="mt-3 capitalize btn-primary-md md:mt-5 ">
             Apply Now
-          </Link>
+          </a>
         </div>
 
         {/* JOB DETAIL SECTION */}

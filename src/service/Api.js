@@ -32,7 +32,7 @@ export const testContent = [
     content:
       "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
     img: '/image/testmonial/img-1.svg',
-    videoLink: "/image/testmonial/vide0-1.mp4"
+    videoLink: "/image/testmonial/video-1.mp4"
   },
   {
     title: "Sarah Johnson",
@@ -40,7 +40,7 @@ export const testContent = [
     content:
       "GoMarkho's VoIP solutions have revolutionized our communication infrastructure. Their expertise in streamlining voice-based workflows make them a top choice for any organization.",
     img: '/image/testmonial/img-2.png',
-    videoLink: "/image/testmonial/vide0-1.mp4"
+    videoLink: "/image/testmonial/video-2.mp4"
   },
   {
     title: "John Smith",
@@ -48,7 +48,6 @@ export const testContent = [
     content:
       "The VoIP systems provided by GoMarkho have been a game-changer for our remote teams. Their reliable service has allowed us to stay connected seamlessly, regardless of our location.",
     img: '/image/testmonial/img-3.png',
-    videoLink: "/image/testmonial/vide0-2.mp4"
   },
   {
     title: "emily Brown",
@@ -240,7 +239,7 @@ export const jobContent = [
     title: 'Devops/VoIP Engineer',
     location: 'Islamabad, Pakistan',
     jobType: 'Full Time',
-    content: 'Architect and automate the deployment and management of VoIP solutions, ensuring high availability, scalability, and security.',
+    content: 'Architect and automate the deployment and management of VoIP solutions, ensuring high availability and scalability.',
     role: [
       "Design, implement, and maintain  VoIP solutions, using tools such as Terraform, Ansible, or Chef.",
       "Configure and manage VoIP platforms and systems, such as Asterisk, FreeSWITCH, or Cisco Unified Communications Manager.",
@@ -316,11 +315,13 @@ export const blogContent = [
     date: 'February 18, 2023',
     title: 'Unleashing the Power of VoIP',
     content: `Discover global connectivity and seamless collaboration solutions with VoIP's communication revolution.`,
+    link: "https://coda.io/d/Unleashing-the-Power-of-VoIP_dEGlb0x6Z-B/Unleashing-the-Power-of-VoIP-Revolutionizing-Communication-in-th_suNKc#_luIk6",
   },
   {
     date: 'March 10, 2023',
     title: '10 Tips for Making Automation Easy',
-    content: `Streamline tasks effortlessly with 10 automation tips for boosted efficiency in your workflow.`
+    content: `Streamline tasks effortlessly with 10 automation tips for boosted efficiency in your workflow.`,
+    link: "https://coda.io/d/10-Tips-for-Making-Automation-Easy_dLC6eWr7-xA/10-Tips-for-Making-Automation-Easy_suuOp#_luldw",
   },
 ]
 

@@ -1,16 +1,11 @@
 import React, { useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 import { testContent } from "../../service/Api";
-
-// LIGHT GALLERY
-import LightGallery from "lightgallery/react";
 
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
-
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgZoom from "lightgallery/plugins/zoom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,7 +16,7 @@ import { FreeMode, Navigation, Autoplay, Pagination } from "swiper/modules";
 const TestmonialSection = () => {
   const swiperRef = useRef(null);
   const swiper = useSwiper();
-  const [isvideo, showVideo] = useState(false);
+  const [file, setFile] = useState(null);
 
   const handlePrevClick = () => {
     if (swiperRef.current) {
@@ -38,7 +33,7 @@ const TestmonialSection = () => {
   return (
     <section className="testmonial_section padding-inline mb-[40px]">
       {/* HEADER SECTION */}
-      <div className="flex items-center justify-between testmonial_header ">
+      <div className="flex items-center justify-between testmonial_header">
         <h2
           className="text-black capitalize  xl:text-[35px] sm:text-[30px] text-[25px] font-primary font-extrabold tracking-wide"
           data-aos="zoom-in-out"
@@ -143,7 +138,7 @@ const TestmonialSection = () => {
                       <button
                         type="button"
                         className="flex items-center justify-end font-semibold text-sky-500"
-                        onClick={() => showVideo(true)}
+                        onClick={() => setFile(element.videoLink)}
                       >
                         Learn more
                         <span className="ps-3">
@@ -157,8 +152,37 @@ const TestmonialSection = () => {
             );
           })}
         </Swiper>
+        <Modal video={file} setFile={setFile} />
       </div>
     </section>
+  );
+};
+
+const Modal = ({ video, setFile }) => {
+  return (
+    <>
+      {video && (
+        <div
+          className="fixed top-0 left-0 z-10 w-full h-screen media-container"
+          style={{ backgroundColor: "rgba(0 , 0 , 0 , 0.7)" }}
+        >
+          <button
+            type="button"
+            className="close_btn md:text-[40px] text-[30px] text-black z-[1] absolute top-[5rem] lg:right-[2rem] right-[1rem] transition duration-300 hover:text-white hover:rotate-[180deg]"
+            onClick={() => setFile(null)}
+          >
+            <IoMdClose />
+          </button>
+          <div className="media">
+            <video
+              className="absolute lg:w-[25rem] w-[20rem] lg:h-[35rem] h-[25rem] top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+              src={video}
+              autoPlay
+            ></video>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

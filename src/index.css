@@ -36,6 +36,11 @@
   /*
      CUSTOM CSS
   */
+
+  body {
+    scrollbar-width: smooth;
+  }
+
   .padding-block {
     @apply md:py-[90px] py-[50px];
   }

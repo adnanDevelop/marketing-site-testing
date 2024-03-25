@@ -2,7 +2,7 @@ import React from "react";
 
 const Expertise = () => {
   return (
-    <main className="padding-inline lg:mt-[35px] mt-[85px] mb-[50px]">
+    <main className="padding-inline lg:mt-[35px] mt-[85px] mb-[70px]">
       <section className="text-center expertise_header ">
         <h2
           className="text-[#333] capitalize text-center  xl:text-[40px] sm:text-[30px] text-[25px] font-primary font-extrabold tracking-wide"
