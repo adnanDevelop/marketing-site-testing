@@ -27,7 +27,6 @@ const CareerForm = ({ position }) => {
       position: jobTitle,
     };
     setLoading(true);
-    console.log(formData);
     try {
       await axios.post(
         "https://email-service-two.vercel.app/submit-form",
@@ -122,7 +121,6 @@ const CareerForm = ({ position }) => {
                 accept=".pdf"
                 ref={fileInputRef}
                 id="resume"
-                //   onChange={(event) => console.log(event.target.files, "working")}
                 {...register("resume", { required: "Resume is required" })}
               />
               {errors.resume && (
