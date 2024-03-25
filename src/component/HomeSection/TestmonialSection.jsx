@@ -178,6 +178,7 @@ const Modal = ({ video, setFile }) => {
               className="absolute lg:w-[25rem] w-[20rem] lg:h-[35rem] h-[25rem] top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
               src={video}
               autoPlay
+              controls
             ></video>
           </div>
         </div>
