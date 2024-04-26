@@ -69,7 +69,7 @@ const TestmonialSection = () => {
             alt=""
           />
         </div>
-        <div className="quote_icon_two absolute z-[10] right-0 sm:bottom-[10%] lg:bottom-[14%] rotate-[180deg] sm:block hidden">
+        <div className="quote_icon_two absolute z-[10] right-0 sm:bottom-[10%] lg:bottom-[10%] rotate-[180deg] sm:block hidden">
           <img
             src="/image/testmonial/quote-1.png"
             className="sm:w-[45px] w-[35px]"
@@ -93,7 +93,7 @@ const TestmonialSection = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 30,
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 2,
@@ -114,14 +114,14 @@ const TestmonialSection = () => {
           {testContent.map((element, index) => {
             return (
               <SwiperSlide className="lg:px-[10px] px-[5px] " key={index}>
-                <div className="mb-[50px] mt-[40px] basis testmonial_card shadow-xl rounded-xl bg-white  sm:px-[20px] px-[20px] pt-[40px] pb-[30px]">
+                <div className="mb-[50px] mt-[40px] basis testmonial_card shadow-xl rounded-xl bg-white  sm:px-[20px] px-[20px] pt-[40px] pb-[20px]">
                   <p className="mb-[20px] xl:text-[16px] tracking-wide text-justify">
                     {element.content}
                   </p>
                   <div className="flex items-center gap-4">
                     <img
                       src={element.img}
-                      className="xl:w-[50px] w-[60px] xl:h-[50px] h-[60px] rounded-full object-cover"
+                      className="w-[50px] h-[50px] rounded-full object-cover"
                       alt=""
                     />
                     <div>

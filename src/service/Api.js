@@ -29,8 +29,7 @@ export const testContent = [
   {
     title: "Brian Colombiana",
     subtitle: "Smart Automation Systems",
-    content:
-      "GoMarkho builds highly stable applications. There support is exceptional.They have a vast majority of experts that helped us scale our infrastructure in minimum time.",
+    content: "GoMarkho crafts highly stable applications with exceptional support, backed by a vast team of experts enabling rapid infrastructure scaling.",
     img: '/image/testmonial/img-1.png',
     videoLink: "/image/testmonial/video-1.mp4"
   },
@@ -50,23 +49,21 @@ export const testContent = [
   },
   {
     title: "emily Brown",
-    subtitle: "Operations Director at RemoteWorks Inc.",
-    content:
-      "GoMarkho IT services are highly recommended for their exceptional 24/7 turnaround time, ensuring swift resolution of all assistance needs with efficiency and reliability.",
+    subtitle: "Operations Director",
+    content: "GoMarkho IT services are highly regarded for their 24/7 support, swiftly resolving assistance needs with efficiency and reliability.",
     img: '/image/testmonial/img-4.png',
   },
   {
     title: "David Martinez",
     subtitle: "CTO at CommuniTech Innovations",
-    content:
-      "GoMarkho's VoIP services have been instrumental in enhancing our customer support capabilities. Their intuitive call routing has enabled us to deliver exceptional service to our clients.",
+    content: "GoMarkho's VoIP services have enhanced our customer support capabilities, enabling exceptional service delivery through intuitive call routing.",
     img: '/image/testmonial/img-5.png',
   },
   {
     title: "Lisa Taylor",
-    subtitle: "Customer Manager at ConnectVoice Solutions",
+    subtitle: "Customer Manager ",
     content:
-      "Choosing GoMarkho was a gamechanger for our us. Their expertise in VoIP, and automation has streamlined our communication processes, delivering unmatched efficiency. ",
+      "Choosing GoMarkho was transformative for us. Their VoIP expertise and automation streamlined communication, boosting efficiency. ",
     img: '/image/testmonial/img-6.png',
   },
 ];
