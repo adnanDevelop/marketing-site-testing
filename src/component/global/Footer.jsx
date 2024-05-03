@@ -47,23 +47,23 @@ const Footer = () => {
               <div>
                 <p className="text-[#146C94] font-regular text-[12px]">Email</p>
                 <a
-                  href="tel:+92518895778"
+                  href="mailto:hr@gomarkho.com"
                   without
                   rel="noreferrer"
                   className="text-white text-[12px] font-normal no-underline"
                 >
-                  +92 51 8895778{" "}
+                  hr@gomarkho.com
                 </a>
               </div>
               <div>
                 <p className="text-[#146C94] font-regular text-[12px]">Phone</p>
                 <a
-                  href="mailto:hr@gomarkho.com"
+                  href="tel:+92518895778"
                   without
                   rel="noreferrer"
                   className="text-white text-[12px] font-normal"
                 >
-                  hr@gomarkho.com
+                  +92 51 8895778{" "}
                 </a>
               </div>
               <div>
