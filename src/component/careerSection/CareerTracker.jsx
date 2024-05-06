@@ -5,7 +5,7 @@ const CareerTracker = () => {
   return (
     <section className="relative padding-block padding-inline ">
       <div className="w-[350px] h-auto absolute  lg:bottom-[75%] bottom-[65%] xl:left-[-10%] lg:left-[-18%]  left-[-25%] rotate-[-20deg] z-[-1] lg:block hidden">
-        <img src="/image/shape.png" alt="" />
+        <img src="/image/shape.png" loading="lazy" alt="" />
       </div>
       {/* TRACKER HEADER SECTION */}
       <div className="tracker_header text-center lg:max-w-[65%] md:max-w-[80%] mx-auto mb-[30px]">
@@ -41,7 +41,7 @@ const CareerTracker = () => {
               data-aos-duration="1800"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={element.img} alt={element.img} />
+              <img src={element.img} alt={element.img} loading="lazy" />
               <p className="font-normal text-black lg:text-[20px] font-secondary  text-center mt-3 leading-none">
                 {element.title}
               </p>

@@ -19,6 +19,7 @@ const FeatureCard = () => {
             src="/image/solution/feature/img-1.png"
             className="mx-auto max-w-[16rem]"
             alt=""
+            loading="lazy"
           />
           <div className="feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 xl:text-[25px] text-[22px] text-black tracking-[0.5px] font-primary font-bold leading-none">
@@ -39,6 +40,7 @@ const FeatureCard = () => {
             src="/image/solution/feature/img-2.png"
             className="mx-auto max-w-[16rem]"
             alt=""
+            loading="lazy"
           />
           <div className="feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 xl:text-[25px] text-[22px]  text-black tracking-[0.5px] font-primary font-bold leading-none">
@@ -59,6 +61,7 @@ const FeatureCard = () => {
             src="/image/solution/feature/img-3.png"
             className="mx-auto max-w-[16rem]"
             alt=""
+            loading="lazy"
           />
           <div className="feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 xl:text-[25px] text-[22px]  text-black tracking-[0.5px] font-primary font-bold leading-none">

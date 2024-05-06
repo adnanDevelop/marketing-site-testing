@@ -25,6 +25,7 @@ const Solutions = () => {
                     src={element.icon}
                     className="w-[2rem] mx-auto mb-2"
                     alt=""
+                    loading="lazy"
                   />
                   <p className="text-black font-extrabold font-primary text-[17px] mt-4 leading-none">
                     {element.title}

@@ -24,7 +24,7 @@ const AboutMission = () => {
         </div>
         <div
           className="mission_img lg:basis-1/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]"
-          data-aos="zoom-in"
+          data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-anchor-placement="center-bottom"
         >
@@ -32,6 +32,7 @@ const AboutMission = () => {
             src="/image/about/about-project.jpg"
             className="xl:w-[350px] lg:w-[280px] w-[250px] xl:h-[450px] sm:h-[350px] h-[300px] rounded-[20px]  "
             alt="project"
+            loading="lazy"
           />
         </div>
       </div>

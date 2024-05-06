@@ -23,7 +23,7 @@ const BenefitCard = () => {
               data-aos="fade-zoom-in"
               data-aos-duration="1800"
             >
-              <img src={element.icon} alt="" />
+              <img src={element.icon} loading="lazy" alt="" />
               <h5 className=" my-4 font-semibold font-secondary tracking-wide text-[20px] capitalize ">
                 {element.title}
               </h5>

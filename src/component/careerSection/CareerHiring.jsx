@@ -33,6 +33,7 @@ const CareerHiring = () => {
                   src={element.img}
                   className="mx-auto block mb-2 lg:w-[60px] lg:h-[60px] w-[50px] h-[50px]"
                   alt=""
+                  loading="lazy"
                 />
                 <h4 className="text-black font-medium font-primary tracking-wide lg:text-[50px] text-[40px] leading-none mb-2">
                   {element.title}

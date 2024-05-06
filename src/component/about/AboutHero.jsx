@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AboutHero = () => {
   const aboutSection = useRef(null);
@@ -44,7 +45,7 @@ const AboutHero = () => {
             </p>
           </div>
 
-          {/* IMAGE SECTION */}
+          {/* Image section */}
           <div className="flex items-center lg:gap-6 gap-4 md:px-[50px]">
             <div
               className="lg:basis-2/3 sm:basis-2/4 basis-full"
@@ -52,7 +53,7 @@ const AboutHero = () => {
               data-aos-duration="1800"
               data-aos-anchor-placement="center-bottom"
             >
-              <img
+              <LazyLoadImage
                 src="/image/about/about-header/img-1.jpg"
                 className="w-full md:h-[400px] h-[300px]  object-cover rounded-3xl"
                 alt=""
@@ -64,7 +65,7 @@ const AboutHero = () => {
               data-aos-duration="1800"
               data-aos-anchor-placement="center-bottom"
             >
-              <img
+              <LazyLoadImage
                 src="/image/about/about-header/img-2.jpg"
                 className="w-full md:h-[400px] h-[300px]  object-cover rounded-3xl"
                 alt=""
@@ -72,7 +73,8 @@ const AboutHero = () => {
             </div>
           </div>
         </div>
-        {/* CONTENT SECTION */}
+
+        {/* About content section */}
         <div
           className="flex flex-col items-start md:flex-row padding-inline"
           data-aos="zoom-in-out"

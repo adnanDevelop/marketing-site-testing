@@ -4,7 +4,7 @@ const CareerHero = () => {
   return (
     <section className="career_hero_section pb-[80px] padding-inline relative overflow-x-hidden">
       <div className="shape_img w-[400px] h-auto absolute top-[100px] md:right-[-220px] right-[-250px] md:rotate-[-155deg] rotate-[-155deg] z-[-1] md:block hidden">
-        <img src="/image/shape.png" alt="" />
+        <img src="/image/shape.png" loading="lazy" alt="" />
       </div>
       <div
         className="text-center about_work_section md:pt-[120px] pt-[100px] md:pb-[80px] pb-[50px] flex items-center justify-center flex-col "
@@ -35,6 +35,7 @@ const CareerHero = () => {
             src="/image/career/career-header/img-1.png"
             className="w-full lg:h-[400px] h-[250px] rounded-[30px] object-cover"
             alt=""
+            loading="lazy"
           />
         </div>
         <div className="flex items-center justify-center">
@@ -42,6 +43,7 @@ const CareerHero = () => {
             src="/image/career/career-header/img-2.png"
             className="w-full lg:h-[400px] h-[250px] rounded-[30px] object-cover"
             alt=""
+            loading="lazy"
           />
         </div>
       </div>

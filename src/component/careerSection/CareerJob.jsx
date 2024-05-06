@@ -15,7 +15,7 @@ const CareerJob = () => {
       id="job"
     >
       <div className="shape_img w-[400px] h-auto absolute bottom-[-15%] md:right-[-200px] right-[-200px] md:rotate-[-155deg] rotate-[-155deg] z-[-1] md:block hidden">
-        <img src="/image/shape.png" alt="" />
+        <img src="/image/shape.png" loading="lazy" alt="" />
       </div>
       {/* JOB HEADER SECTION */}
       <div
