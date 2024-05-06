@@ -23,16 +23,16 @@ const ProjectSection = () => {
         >
           <img
             src="/image/about-img.png"
-            className="lg:w-[420px] md:w-[320px] w-[300px] xl:h-[450px] lg:h-[420px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
+            className="lg:w-[100%] max-w-[400px] min-[1600px]:h-[600px] lg:h-[450px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
             loading="lazy"
           />
         </div>
-        <div className="project_content w-full xl:h-[80vh] lg:h-[80vh] lg:pb-0 pb-10 flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
+        <div className="project_content w-full xl:h-[80vh] lg:h-[80vh] lg:pb-0 pb-10 flex flex-col lg:items-end justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
           <p
-            className="text-white font-light font-heading xl:text-[25px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px] leading-tight"
-            data-aos="fade-zoom-in"
-            data-aos-duration="1500"
+            className="text-white font-light font-heading xl:text-3xl md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px] leading-tight md:w-[90%] w-full"
+            // data-aos="fade-zoom-in"
+            // data-aos-duration="1500"
           >
             Specializing in VoIP, software development, and intelligent
             automation, we offer tailored solutions that resonate with your
