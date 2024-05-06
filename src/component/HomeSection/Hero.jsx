@@ -33,9 +33,17 @@ const Hero = () => {
               height={4000}
               loading="lazy"
             /> */}
+            <video
+              src="/image/hero-bg-2.mp4"
+              className="absolute inset-0 object-cover w-full h-full"
+              width={3000}
+              height={4000}
+              autoPlay
+              loop
+            ></video>
 
             {/* Content section */}
-            <div className="md:pt-3 hero_content absolute  top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center">
+            <div className="md:pt-3 hero_content absolute top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center">
               <h1 className="xl:text-[65px] font-primary md:text-[60px] text-[50px]  text-white font-[800] leading-none">
                 Elevate{" "}
               </h1>
@@ -65,6 +73,14 @@ const Hero = () => {
               height={4000}
               loading="lazy"
             /> */}
+            <video
+              src="/image/hero-bg-3.mp4"
+              className="absolute inset-0 object-cover w-full h-full"
+              width={3000}
+              height={4000}
+              autoPlay
+              loop
+            ></video>
 
             {/* Content section */}
             <div className="md:pt-3 hero_content absolute top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center mx-auto">
