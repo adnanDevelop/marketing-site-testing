@@ -14,14 +14,14 @@ const Navbar = () => {
   const [isDropdown, setDropdown] = useState(false);
 
   /*
-    THIS IS FOR NAVBAR SCROLL ANIMATION
+    This is for navbar scroll animation
   */
   window.addEventListener("scroll", () => {
     window.scrollY > 50 ? setScrollAnimation(true) : setScrollAnimation(false);
   });
 
   /*
-     FOR OPENING SIDE BAR
+     For opening sidebar
   */
 
   const openSideBar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   /*
-     FOR CLOSING SIDEBAR AND ADDING ACTIVE COLOR IN NAV LINK
+     For closing sidebar and adding active class to all navlinks
   */
 
   const closeNavFun = (value) => {
@@ -59,7 +59,8 @@ const Navbar = () => {
           <img src="/image/logo.png" loading="lazy" alt="" />
         </Link>
       </div>
-      {/* LARGE SCREEN NAV-LINKS */}
+
+      {/* Large screen nav links */}
       <div className="hidden links_section lg:block">
         <ul className="flex items-center gap-6 list-none">
           <li className="py-3">
@@ -163,7 +164,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      {/* ANIMATED HAMBURGER */}
+
+      {/* Animated hamburger */}
       <div className="lg:hidden">
         <button
           type="button"
@@ -192,13 +194,13 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* SMALL SCREEN NAV-LINKS */}
+      {/* Small screen nav-links */}
       <div
         className={`mobile_menu lg:hidden block fixed top-0  bg-white shadow-lg md:w-[35%] sm:w-[60%] w-[65%] h-screen z-50 duration-300 bg-blue-500 px-4 pt-4 ${
           active ? "left-[0%]" : "left-[-100%]"
         } `}
       >
-        {/* HEADER SECTION */}
+        {/* Header section */}
         <div className="flex items-center justify-between menu_header">
           <div className="logo">
             <Link to="/">
@@ -225,7 +227,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* LNIKS SECTION */}
+        {/* Link section */}
         <div className="w-full h-[80vh] flex items-start justify-start flex-col pt-[60px] ">
           <button
             className="relative mb-3 font-semibold capitalize transition duration-500 gap-x-1 text-start text-slate-500 hover:text-sky-500 mobile_menu"

@@ -33,7 +33,8 @@ const Hero = () => {
               height={4000}
               loading="lazy"
             /> */}
-            {/* CONTENT SECTION */}
+
+            {/* Content section */}
             <div className="md:pt-3 hero_content absolute  top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center">
               <h1 className="xl:text-[65px] font-primary md:text-[60px] text-[50px]  text-white font-[800] leading-none">
                 Elevate{" "}
@@ -64,7 +65,8 @@ const Hero = () => {
               height={4000}
               loading="lazy"
             /> */}
-            {/* CONTENT SECTION */}
+
+            {/* Content section */}
             <div className="md:pt-3 hero_content absolute top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center mx-auto">
               <h1 className="xl:text-[60px] font-primary md:text-[50px] text-[40px] text-white font-[800]  leading-none">
                 Transformming{" "}
