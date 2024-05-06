@@ -35,7 +35,7 @@ const TestmonialSection = () => {
       {/* HEADER SECTION */}
       <div className="flex items-center justify-between testmonial_header">
         <h2
-          className="text-black capitalize  xl:text-[35px] sm:text-[30px] text-[25px] font-primary font-extrabold tracking-wide"
+          className="text-black capitalize leading-none xl:text-[35px] sm:text-[30px] text-[25px] font-primary font-extrabold tracking-wide"
           data-aos="zoom-in-out"
           data-aos-duration="1500"
         >
@@ -48,13 +48,13 @@ const TestmonialSection = () => {
         >
           <button
             onClick={handlePrevClick}
-            className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] "
+            className="sm:w-[40px] w-[35px] sm:h-[40px] h-[35px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 sm:text[20px] text-sm "
           >
             <FaArrowLeft />
           </button>
           <button
             onClick={handleNextClick}
-            className="w-[40px] h-[40px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 text[20px] "
+            className="sm:w-[40px] w-[35px] sm:h-[40px] h-[35px] rounded-md flex items-center justify-center bg-sky-500 text-white transition duration-300 focus:bg-sky-900 sm:text[20px] text-sm "
           >
             <FaArrowRight />
           </button>

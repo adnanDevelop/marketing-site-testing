@@ -14,7 +14,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <section className="project_section xl:before:h-[80vh] lg:before:h-[80vh] lg:before:w-[75%] xl:before:top-[5%] lg:before:top-[4%] before:right-0  relative lg:mb-0 mb-[50px]">
+    <section className="project_section sectionWithBg lg:mb-0 mb-[50px]">
       <div className="flex flex-col justify-center lg:items-center lg:flex-row padding-inline">
         <div
           className="project_img_section lg:basis-1/3 md:basis-2/4 basis-full"
@@ -23,12 +23,12 @@ const ProjectSection = () => {
         >
           <img
             src="/image/about-img.png"
-            className="xl:w-[350px] lg:w-[300px] md:w-[320px] w-[300px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
+            className="lg:w-[550px]  md:w-[320px] w-[300px] xl:h-[550px] lg:h-[400px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
             loading="lazy"
           />
         </div>
-        <div className="project_content w-full lg:h-[90vh] flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
+        <div className="project_content w-full lg:h-[90vh] lg:pb-0 pb-10 flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
           <p
             className="text-white font-[300] font-heading xl:text-[22px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px]"
             data-aos="fade-zoom-in"
@@ -106,9 +106,8 @@ const ProjectSection = () => {
             >
               About Us{" "}
               <span className="ps-3">
-                {" "}
-                <FaArrowRight />{" "}
-              </span>{" "}
+                <FaArrowRight />
+              </span>
             </Link>
           </div>
         </div>
