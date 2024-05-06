@@ -23,14 +23,14 @@ const ProjectSection = () => {
         >
           <img
             src="/image/about-img.png"
-            className="lg:w-[100%] w-[350px] xl:w-[420px] 2xl:w-[550px] 2xl:h-[500px] lg:h-[420px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
+            className="lg:w-[100%] w-[350px] xl:w-[420px] 2xl:w-[550px] 2xl:h-[500px] lg:h-[420px] xl:h-[450px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
             loading="lazy"
           />
         </div>
-        <div className="project_content w-full xl:h-[85vh] lg:h-[80vh] lg:pb-0 pb-10 flex flex-col lg:items-end justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
+        <div className="project_content w-full xl:h-[88vh] 2xl:[90vh] lg:h-[82vh] lg:pb-0 pb-10 flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
           <p
-            className="text-white font-light font-heading xl:text-[25px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px] leading-tight md:w-[90%] w-full"
+            className="text-white font-light font-heading xl:text-[30px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px] leading-tight"
             // data-aos="fade-zoom-in"
             // data-aos-duration="1500"
           >
@@ -43,7 +43,7 @@ const ProjectSection = () => {
             onEnter={() => setCounterOn(true)}
             onExit={() => setCounterOn(false)}
           >
-            <div className="flex items-center lg:justify-end justify-start lg:gap-[70px] sm:gap-[40px] gap-[20px] md:mt-6 mt-8">
+            <div className="flex items-center justify-end lg:gap-[70px] sm:gap-[40px] gap-[20px] md:mt-6 mt-8">
               <div
                 className="text-center project_counter"
                 data-aos="fade-zoom-in"
