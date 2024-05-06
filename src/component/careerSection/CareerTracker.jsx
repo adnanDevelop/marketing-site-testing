@@ -15,7 +15,7 @@ const CareerTracker = () => {
           data-aos-duration="1800"
           data-aos-anchor-placement="center-bottom"
         >
-          Career trackers
+          Career Trackers
         </h2>
         <p
           className="text-gray font-normal font-secondary  lg:px-[50px] md:px-[30px] lg:text-justify text-justify text-last-justify "
