@@ -25,14 +25,6 @@ const Hero = () => {
       >
         <SwiperSlide>
           <div className="hero_video w-full lg:h-[90vh] overflow-hidden h-screen relative flex sm:items-start items-center sm:justify-start justify-center z-100  ">
-            {/* <img
-              src="/image/hero-bg-1.gif"
-              alt="Background Video"
-              className="absolute inset-0 object-cover w-full h-full"
-              width={3000}
-              height={4000}
-              loading="lazy"
-            /> */}
             <video
               className="absolute inset-0 object-cover w-full h-full"
               width={3000}
@@ -67,24 +59,14 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="hero_video w-full lg:h-[90vh] h-screen relative flex sm:items-start items-center sm:justify-start justify-center z-100">
-            {/* <img
+            <img
               src="/image/hero-bg-2.gif"
               alt="Background Video"
               className="absolute inset-0 object-cover w-full h-full"
               width={3000}
               height={4000}
               loading="lazy"
-            /> */}
-            <video
-              className="absolute inset-0 object-cover w-full h-full"
-              width={3000}
-              height={4000}
-              autoPlay
-              muted
-              loop
-            >
-              <source src="/image/hero-bg-3.mp4" />
-            </video>
+            />
 
             <div className="md:pt-3 hero_content absolute top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center mx-auto">
               <h1 className="xl:text-[60px] font-primary md:text-[50px] text-[40px] text-white font-[800]  leading-none">
