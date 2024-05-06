@@ -17,7 +17,7 @@ const ProjectSection = () => {
     <section className="project_section sectionWithBg lg:mb-0 mb-[50px]">
       <div className="flex flex-col justify-center lg:items-center lg:flex-row padding-inline">
         <div
-          className="project_img_section lg:basis-1/3 md:basis-2/4 basis-full"
+          className="project_img_section lg:basis-2/5 md:basis-2/4 basis-full"
           data-aos="fade-zoom-in"
           data-aos-duration="1500"
         >
@@ -28,7 +28,7 @@ const ProjectSection = () => {
             loading="lazy"
           />
         </div>
-        <div className="project_content w-full xl:h-[88vh] 2xl:[90vh] lg:h-[82vh] lg:pb-0 pb-10 flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
+        <div className="project_content lg:basis-3/5 md:basis-2/4 basis-full w-full xl:h-[88vh] 2xl:[90vh] lg:h-[82vh] lg:pb-0 pb-10 flex flex-col justify-center lg:mt-0 mt-[40px]">
           <p
             className="text-white font-light font-heading xl:text-[30px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px] leading-tight"
             data-aos="fade-zoom-in"
