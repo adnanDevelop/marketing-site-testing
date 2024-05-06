@@ -31,8 +31,8 @@ const ProjectSection = () => {
         <div className="project_content w-full xl:h-[88vh] 2xl:[90vh] lg:h-[82vh] lg:pb-0 pb-10 flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
           <p
             className="text-white font-light font-heading xl:text-[30px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px] leading-tight"
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="1500"
+            data-aos="fade-zoom-in"
+            data-aos-duration="1500"
           >
             Specializing in VoIP, software development, and intelligent
             automation, we offer tailored solutions that resonate with your
