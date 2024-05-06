@@ -23,7 +23,7 @@ const ProjectSection = () => {
         >
           <img
             src="/image/about-img.png"
-            className="lg:w-[100%] w-[350px] xl:w-[420px] 2xl:w-[550px] 2xl:h-[500px] lg:h-[420px] xl:h-[450px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
+            className="lg:w-[100%] w-[350px] xl:w-[420px] 2xl:w-[500px] 2xl:h-[580px] lg:h-[420px] xl:h-[450px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
             loading="lazy"
           />
