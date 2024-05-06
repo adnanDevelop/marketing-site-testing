@@ -23,14 +23,14 @@ const ProjectSection = () => {
         >
           <img
             src="/image/about-img.png"
-            className="lg:w-[550px]  md:w-[320px] w-[300px] xl:h-[550px] lg:h-[400px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
+            className="lg:w-[420px] md:w-[320px] w-[300px] xl:h-[450px] lg:h-[420px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
             loading="lazy"
           />
         </div>
-        <div className="project_content w-full lg:h-[90vh] lg:pb-0 pb-10 flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
+        <div className="project_content w-full xl:h-[80vh] lg:h-[80vh] lg:pb-0 pb-10 flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">
           <p
-            className="text-white font-[300] font-heading xl:text-[22px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px]"
+            className="text-white font-light font-heading xl:text-[25px] md:text-[20px] text-[18px] text-justify xl:ps-[80px] lg:ps-[50px] leading-tight"
             data-aos="fade-zoom-in"
             data-aos-duration="1500"
           >
@@ -49,7 +49,7 @@ const ProjectSection = () => {
                 data-aos="fade-zoom-in"
                 data-aos-duration="1500"
               >
-                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold">
+                <p className=" text-sky-900 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold">
                   {" "}
                   {counterOn && (
                     <CountUp start={0} end={150} duration={3} delay={0} />
@@ -65,7 +65,7 @@ const ProjectSection = () => {
                 data-aos="fade-zoom-in"
                 data-aos-duration="1500"
               >
-                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold">
+                <p className="text-sky-900 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold">
                   {" "}
                   {counterOn && (
                     <CountUp start={0} end={50} duration={3} delay={0} />
@@ -81,7 +81,7 @@ const ProjectSection = () => {
                 data-aos="fade-zoom-in"
                 data-aos-duration="1500"
               >
-                <p className="text-sky-500 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold">
+                <p className="text-sky-900 2xl:text-[50px] md:text-[40px] text-[30px] font-secondary font-semibold">
                   {" "}
                   {counterOn && (
                     <CountUp start={0} end={10} duration={3} delay={0} />

@@ -301,7 +301,7 @@ body::-webkit-scrollbar-track {
 }
 
 .sectionWithBg {
-  background-image: linear-gradient(to right, transparent 0%, transparent 30%, #020332 30%, #020332 100%);
+  background-image: linear-gradient(to right, transparent 0%, transparent 28%, #020332 28%, #020332 100%);
 }
 
 @media (max-width: 1024px) {
