@@ -56,7 +56,7 @@ const Navbar = () => {
     >
       <div className="py-3 logo">
         <Link to="/" onClick={() => navClickFunc("img")}>
-          <img src="/image/logo.png" alt="" />
+          <img src="/image/logo.png" loading="lazy" alt="" />
         </Link>
       </div>
       {/* LARGE SCREEN NAV-LINKS */}
@@ -221,6 +221,7 @@ const Navbar = () => {
                   setActive(false);
                   setOpen(false);
                 }}
+                loading="lazy"
               />
             </Link>
           </div>
@@ -238,7 +239,7 @@ const Navbar = () => {
         {/* LNIKS SECTION */}
         <div className="w-full h-[80vh] flex items-start justify-start flex-col pt-[60px] ">
           <button
-            className="relative mb-3 font-semibold capitalize transition duration-500  gap-x-1 text-start text-slate-500 hover:text-sky-500 mobile_menu"
+            className="relative mb-3 font-semibold capitalize transition duration-500 gap-x-1 text-start text-slate-500 hover:text-sky-500 mobile_menu"
             onClick={() => setItemActive(!itemActive)}
           >
             Service
