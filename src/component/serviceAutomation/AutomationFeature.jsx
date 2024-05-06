@@ -24,6 +24,7 @@ const AutomationFeature = () => {
             src="/image/service-automation/feature/img-1.png"
             className="mx-auto max-w-[15rem] object-cover"
             alt=""
+            loading="lazy"
           />
           <div className="development_feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 font-primary tracking-[0.5px] 2xl:text-[30px] lg:text-[20px] text-black font-bold leading-none">
@@ -44,6 +45,7 @@ const AutomationFeature = () => {
             src="/image/service-automation/feature/img-2.png"
             className="mx-auto max-w-[15rem] object-cover"
             alt=""
+            loading="lazy"
           />
           <div className="development_feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 font-primary tracking-[0.5px] 2xl:text-[30px] lg:text-[20px] text-black font-bold leading-none ">
@@ -64,6 +66,7 @@ const AutomationFeature = () => {
             src="/image/service-automation/feature/img-3.png"
             className="mx-auto max-w-[18rem] object-cover"
             alt=""
+            loading="lazy"
           />
           <div className="development_feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 font-primary tracking-[0.5px] 2xl:text-[30px] lg:text-[20px] text-black font-bold leading-none ">

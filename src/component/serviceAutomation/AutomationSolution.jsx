@@ -26,6 +26,7 @@ const AutomationSolution = () => {
                     src={element.icon}
                     className="w-[2rem] mx-auto mb-2"
                     alt=""
+                    loading="lazy"
                   />
                   <p className="text-black font-primary tracking-[0.5px] font-extrabold text-[17px] mt-4 leading-none">
                     {element.title}

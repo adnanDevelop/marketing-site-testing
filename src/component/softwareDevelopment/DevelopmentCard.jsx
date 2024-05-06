@@ -23,7 +23,7 @@ const DevelopmentCard = () => {
               data-aos="fade-zoom-in"
               data-aos-duration="1800"
             >
-              <img src={element.icon} alt="" />
+              <img src={element.icon} alt="" loading="lazy" />
               <h5 className=" mt-4 mb-3 font-semibold font-primary tracking-[0.6px] text-[20px] capitalize">
                 {element.title}
               </h5>

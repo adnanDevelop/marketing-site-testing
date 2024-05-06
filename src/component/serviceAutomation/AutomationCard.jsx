@@ -23,7 +23,7 @@ const AutomationCard = () => {
               data-aos="fade-up"
               data-aos-duration="1800"
             >
-              <img src={element.icon} alt="" />
+              <img src={element.icon} alt="" loading="lazy" />
               <h5 className=" my-4 font-extrabold font-primary tracking-wide text-[18px] capitalize">
                 {element.title}
               </h5>

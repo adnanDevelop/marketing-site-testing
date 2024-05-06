@@ -17,6 +17,7 @@ const DevelopmentFeature = () => {
             src="/image/software-development/feature/img-1.png"
             className="mx-auto max-w-[16rem] object-cover h-auto"
             alt=""
+            loading="lazy"
           />
           <div className="development_feature_card_body text-center md:px-[20px] px-[15px] mt-[40px]">
             <h4 className="my-3 2xl:text-[25px] font-primary tracking-[0.5px] lg:text-[25px]  text-[22px]  text-black font-bold leading-none ">
@@ -39,6 +40,7 @@ const DevelopmentFeature = () => {
             src="/image/software-development/feature/img-2.png"
             className="mx-auto max-w-[16rem] object-cover h-auto"
             alt=""
+            loading="lazy"
           />
           <div className="development_feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 2xl:text-[25px] font-primary tracking-[0.5px] lg:text-[25px]  text-[22px]  text-black font-bold leading-none ">
@@ -62,6 +64,7 @@ const DevelopmentFeature = () => {
             src="/image/software-development/feature/img-3.png"
             className="mx-auto max-w-[18rem] object-cover h-auto"
             alt=""
+            loading="lazy"
           />
           <div className="development_feature_card_body text-center md:px-[20px] px-[15px] ">
             <h4 className="my-3 2xl:text-[25px] font-primary tracking-[0.5px] lg:text-[25px]  text-[22px]  text-black font-bold leading-none ">

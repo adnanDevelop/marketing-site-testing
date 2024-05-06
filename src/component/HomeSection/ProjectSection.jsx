@@ -25,6 +25,7 @@ const ProjectSection = () => {
             src="/image/about-img.png"
             className="xl:w-[350px] lg:w-[300px] md:w-[320px] w-[300px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[350px] object-cover rounded-[15px]"
             alt=""
+            loading="lazy"
           />
         </div>
         <div className="project_content w-full lg:h-[90vh] flex flex-col justify-center lg:basis-2/3 md:basis-2/4 basis-full lg:mt-0 mt-[40px]">

@@ -67,6 +67,7 @@ const TestmonialSection = () => {
             src="/image/testmonial/quote-1.png"
             className="sm:w-[45px] w-[35px]"
             alt=""
+            loading="lazy"
           />
         </div>
         <div className="quote_icon_two absolute z-[10] right-0 sm:bottom-[10%] lg:bottom-[10%] rotate-[180deg] sm:block hidden">
@@ -74,6 +75,7 @@ const TestmonialSection = () => {
             src="/image/testmonial/quote-1.png"
             className="sm:w-[45px] w-[35px]"
             alt=""
+            loading="lazy"
           />
         </div>
 
@@ -123,6 +125,7 @@ const TestmonialSection = () => {
                       src={element.img}
                       className="w-[50px] h-[50px] rounded-full object-cover"
                       alt=""
+                      loading="lazy"
                     />
                     <div>
                       <h4 className="font-medium text-black text-secondary font-primary ">

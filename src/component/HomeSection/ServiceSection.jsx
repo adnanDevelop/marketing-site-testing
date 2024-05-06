@@ -57,6 +57,7 @@ const ServiceSection = () => {
               className="absolute top-[50%] left-[-100%] translate-y-[-50%] z-[-1] lg:w-[40%] w-[200px] service-img"
               alt=""
               ref={imgRef}
+              loading="lazy"
             />
           </div>
         </div>
