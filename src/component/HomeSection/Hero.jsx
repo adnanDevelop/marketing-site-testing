@@ -31,6 +31,7 @@ const Hero = () => {
               className="absolute inset-0 object-cover w-full h-full"
               width={3000}
               height={4000}
+              loading="lazy"
             />
             {/* CONTENT SECTION */}
             <div className="md:pt-3 hero_content absolute  top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center">
@@ -61,6 +62,7 @@ const Hero = () => {
               className="absolute inset-0 object-cover w-full h-full"
               width={3000}
               height={4000}
+              loading="lazy"
             />
             {/* CONTENT SECTION */}
             <div className="md:pt-3 hero_content absolute top-[50%] translate-y-[-50%] z-10 padding-inline lg:flex-none flex sm:items-start items-center flex-col sm:text-start text-center mx-auto">
