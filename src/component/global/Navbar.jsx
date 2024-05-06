@@ -55,7 +55,7 @@ const Navbar = () => {
       }`}
     >
       <div className="py-3 logo">
-        <Link to="/" onClick={() => navClickFunc("img")}>
+        <Link to="/" className="navbar_img" onClick={() => navClickFunc("img")}>
           <img src="/image/logo.png" loading="lazy" alt="" />
         </Link>
       </div>
@@ -191,17 +191,6 @@ const Navbar = () => {
           ></span>
         </button>
       </div>
-
-      {/*
-        SIMPLE HAMBURGER
-      <button
-        className={`menu lg:hidden block text-[20px] text-[#43525B] p-2 border border-[#43525B] transition duration-300 ${active ? " focus:border-sky-500 focus:text-sky-500" : ""
-          } `}
-        onClick={() => setActive(!active)}
-      >
-        <FaBarsStaggered />
-      </button> 
-      */}
 
       {/* SMALL SCREEN NAV-LINKS */}
       <div
