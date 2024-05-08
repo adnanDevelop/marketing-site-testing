@@ -19,7 +19,6 @@ module.exports = {
       'soft-white': "#EEEEEE",
       'black': "#000000",
       'gray': '#797979',
-
     },
 
     fontFamily: {

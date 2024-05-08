@@ -29,6 +29,12 @@ const ServiceSection = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const topBar = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <section
       className="flex service_section padding-inline padding-block "
@@ -80,7 +86,8 @@ const ServiceSection = () => {
                   {element.content}
                 </p>
                 <Link
-                  to="/"
+                  to={element.link}
+                  onClick={topBar}
                   className="sm:ps-[50px] ps-[30px] text-sky-500 xl:text-[18px] text-[16px] text-center flex items-center gap-2 font-primary  font-semibold transition duration-500 hover:text-sky-900 focus:text-sky-900 "
                 >
                   Learn more{" "}

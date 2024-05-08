@@ -9,18 +9,21 @@ export const serviceData = [
     title: "Communication Solutions",
     content:
       "Effective & reliable communication is the secret that lies at the heart of every successful business.",
+    link: "/servicesolution"
   },
   {
     count: "02.",
     title: "Software Development",
     content:
       "Any business that aims to offer a personalized service needs to cater to its own specific needs first.",
+    link: "/servicesoftware"
   },
   {
     count: "03.",
     title: "Process Automation",
     content:
       "You need to free your teams from drudgery of routine tasks to enhance customers’ experience.",
+    link: "/serviceautomation"
   },
 ];
 
