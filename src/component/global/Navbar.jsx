@@ -3,7 +3,7 @@ import { useState } from "react";
 // import { FaBarsStaggered } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
 import { FaCaretDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -12,6 +12,7 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState(" ");
   const [scrollAnimation, setScrollAnimation] = useState(false);
   const [isDropdown, setDropdown] = useState(false);
+  const location = useLocation();
 
   /*
     This is for navbar scroll animation
@@ -33,20 +34,14 @@ const Navbar = () => {
      For closing sidebar and adding active class to all navlinks
   */
 
-  const closeNavFun = (value) => {
-    setActive(false);
-    setActiveLink(value);
-    window.scrollTo({
-      top: 0,
-    });
-  };
-
   const navClickFunc = (value) => {
     setActiveLink(value);
     window.scrollTo({
       top: 0,
     });
   };
+
+  console.log(activeLink, location.pathname);
 
   return (
     <nav
@@ -63,9 +58,10 @@ const Navbar = () => {
       {/* Large screen nav links */}
       <div className="hidden links_section lg:block">
         <ul className="flex items-center gap-6 list-none">
+          {/* Dropdown section */}
           <li className="py-3">
             <button
-              className="relative flex items-center font-semibold capitalize transition duration-500 ease-in-out group gap-x-1 text-slate-500 hover:text-sky-500 dropdown"
+              className={`relative flex items-center font-semibold capitalize transition duration-500 ease-in-out group gap-x-1 text-slate-500 hover:text-sky-500 dropdown `}
               onMouseEnter={() => setDropdown(true)}
               onMouseLeave={() => setDropdown(false)}
             >
@@ -84,9 +80,10 @@ const Navbar = () => {
                   <Link
                     to="/servicesolution"
                     className={`ps-4 text-[14px] capitalize font-[500]  transition duration-500 hover:text-sky-500 inline-block mb-[7px] ${
-                      activeLink === "solution" ? "text-sky-500" : "text-black"
+                      "/servicesolution" === location.pathname
+                        ? "text-sky-500"
+                        : "text-black"
                     } `}
-                    onClick={() => navClickFunc("solution")}
                   >
                     communication solutions
                   </Link>
@@ -95,7 +92,7 @@ const Navbar = () => {
                   <Link
                     to="/servicesoftware"
                     className={`ps-4 text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block mb-[7px] ${
-                      activeLink === "development"
+                      "/servicesoftware" === location.pathname
                         ? "text-sky-500"
                         : "text-slate-500"
                     } `}
@@ -108,7 +105,7 @@ const Navbar = () => {
                   <Link
                     to="/serviceautomation"
                     className={`ps-4 text-[14px] capitalize font-[500] text-black transition duration-500 hover:text-sky-500 inline-block ${
-                      activeLink === "automation"
+                      "/serviceautomation" === location.pathname
                         ? "text-sky-500"
                         : "text-slate-500"
                     } `}
@@ -124,9 +121,10 @@ const Navbar = () => {
             <Link
               to="/about"
               className={`capitalize font-semibold transition duration-500 hover:text-sky-500 ${
-                activeLink === "about" ? "text-sky-500" : "text-slate-500"
+                "/about" === location.pathname
+                  ? "text-sky-500"
+                  : "text-slate-500"
               }`}
-              onClick={() => navClickFunc("about")}
             >
               about us
             </Link>
@@ -135,9 +133,10 @@ const Navbar = () => {
             <Link
               to="/career"
               className={`capitalize font-semibold transition duration-500 hover:text-sky-500 ${
-                activeLink === "career" ? "text-sky-500" : "text-slate-500"
+                "/career" === location.pathname
+                  ? "text-sky-500"
+                  : "text-slate-500"
               }`}
-              onClick={() => navClickFunc("career")}
             >
               careers
             </Link>
@@ -146,19 +145,16 @@ const Navbar = () => {
             <Link
               to="/blog"
               className={`capitalize font-semibold transition duration-500 hover:text-sky-500 ${
-                activeLink === "blog" ? "text-sky-500" : "text-slate-500"
+                "/blog" === location.pathname
+                  ? "text-sky-500"
+                  : "text-slate-500"
               }`}
-              onClick={() => navClickFunc("blog")}
             >
               blogs
             </Link>
           </li>
           <li className="py-3 ">
-            <Link
-              to="/contact"
-              className="btn-primary-sm "
-              onClick={() => navClickFunc("contact")}
-            >
+            <Link to="/contact" className="btn-primary-sm ">
               contact us
             </Link>
           </li>
@@ -248,12 +244,12 @@ const Navbar = () => {
                 <Link
                   to="/servicesolution"
                   className={`text-[14px] capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-2 ${
-                    activeLink === "solution"
+                    "/servicesolution" === location.pathname
                       ? "text-sky-500"
                       : "text-slate-500"
                   }`}
                   onClick={() => {
-                    closeNavFun("solution");
+                    setActive(false);
                     setOpen(false);
                   }}
                 >
@@ -264,12 +260,12 @@ const Navbar = () => {
                 <Link
                   to="/servicesoftware"
                   className={`text-[14px]  capitalize font-normal transition duration-500 hover:text-sky-500   inline-block mb-2 ${
-                    activeLink === "development"
+                    "/servicesoftware" === location.pathname
                       ? "text-sky-500"
                       : "text-slate-500"
                   }`}
                   onClick={() => {
-                    closeNavFun("development");
+                    setActive(false);
                     setOpen(false);
                   }}
                 >
@@ -280,12 +276,12 @@ const Navbar = () => {
                 <Link
                   to="/serviceautomation"
                   className={`text-[14px]  capitalize font-normal transition duration-500 hover:text-sky-500 inline-block ${
-                    activeLink === "automation"
+                    "/serviceautomation" === location.pathname
                       ? "text-sky-500"
                       : "text-slate-500"
                   } `}
                   onClick={() => {
-                    closeNavFun("automation");
+                    setActive(false);
                     setOpen(false);
                   }}
                 >
@@ -299,10 +295,12 @@ const Navbar = () => {
               <Link
                 to="/about"
                 className={`capitalize font-semibold text-slate transition duration-500 hover:text-blue-500 ${
-                  activeLink === "about" ? "text-sky-500" : "text-slate-500"
+                  "/about" === location.pathname
+                    ? "text-sky-500"
+                    : "text-slate-500"
                 }`}
                 onClick={() => {
-                  closeNavFun("about");
+                  setActive(false);
                   setOpen(false);
                 }}
               >
@@ -314,10 +312,12 @@ const Navbar = () => {
               <Link
                 to="/career"
                 className={`capitalize font-semibold text-slate transition duration-500 hover:text-blue-500 ${
-                  activeLink === "career" ? "text-sky-500" : "text-slate-500"
+                  "/career" === location.pathname
+                    ? "text-sky-500"
+                    : "text-slate-500"
                 }`}
                 onClick={() => {
-                  closeNavFun("career");
+                  setActive(false);
                   setOpen(false);
                 }}
               >
@@ -328,10 +328,12 @@ const Navbar = () => {
               <Link
                 to="/blog"
                 className={`capitalize font-semibold text-slate transition duration-500 hover:text-blue-500 ${
-                  activeLink === "blog" ? "text-sky-500" : "text-slate-500"
+                  "/blog" === location.pathname
+                    ? "text-sky-500"
+                    : "text-slate-500"
                 }`}
                 onClick={() => {
-                  closeNavFun("blog");
+                  setActive(false);
                   setOpen(false);
                 }}
               >
@@ -345,7 +347,7 @@ const Navbar = () => {
                   activeLink === "contact" ? "text-sky-500" : "text-slate-500"
                 }`}
                 onClick={() => {
-                  closeNavFun("contact");
+                  setActive(false);
                   setOpen(false);
                 }}
               >
